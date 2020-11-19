@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1605790043411,
+        "title": "If I let you go",
+        "artist": "Westlife",
+        "price": "1000 Ar",
+        "style": "Slow",
+        "lyrics": "",
+        "isFavorite": false
+    },
+    {
+        "id": 1605790071018,
+        "title": "Power of love",
+        "artist": "Celine Dion",
+        "price": "2000 Ar",
+        "style": "Slow",
+        "lyrics": "",
+        "isFavorite": false
+    },
+    {
+        "id": 1605790140520,
+        "title": "Couleranao Coulerako",
+        "artist": "Dadi Love",
+        "price": "5000Ar",
+        "style": "Kawitry",
+        "lyrics": "",
+        "isFavorite": false
+    },
+    {
+        "id": 1605790106952,
+        "title": "Miverena aty ANtsihanaka",
+        "artist": "Novah Dakoto",
+        "price": "3000Ar",
+        "style": "country",
+        "lyrics": "",
+        "isFavorite": false
+    }
+
+
+
+]
