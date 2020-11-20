@@ -20,7 +20,7 @@ function App() {
                 <Styles/>
             </Route>
             <Route path="/addsong">
-            <h3>😃Add a new song</h3>
+            <h4>😃Add a new song</h4>
                 <AddSong/>
             </Route>
             <Route path="/cart">
