@@ -35,7 +35,8 @@ h4 {
     padding: 1rem;
 }
 .song-list div,
-.ri-heart-line {
+.ri-heart-line,
+.ri-heart-fill {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
