@@ -19,6 +19,7 @@ function App() {
                 <Styles/>
             </Route>
             <Route path="/addsong">
+            <h3>😃Add a new song</h3>
                 <AddSong/>
             </Route>
         </Switch>
