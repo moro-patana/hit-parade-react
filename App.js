@@ -23,7 +23,7 @@ function App() {
             <h4>😃Add a new song</h4>
                 <AddSong/>
             </Route>
-            <Route path="/cart">
+            <Route exact path="/cart">
                 <Cart/>
             </Route>
         </Switch>
