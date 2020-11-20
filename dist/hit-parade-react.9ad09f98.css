@@ -28,6 +28,9 @@ a {
 }
 h3 {
     margin: 0;
+    text-align: center;
+    font-size: 40px;
+    padding: 1rem;
 }
 .song-list div,
 .ri-heart-line {

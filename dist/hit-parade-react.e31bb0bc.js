@@ -34077,7 +34077,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function AddSong() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "add-new-song"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     placeholder: "Title"
   }), /*#__PURE__*/_react.default.createElement("input", {
@@ -34153,7 +34153,7 @@ function App() {
     path: "/styles"
   }, /*#__PURE__*/_react.default.createElement(_styles.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/addsong"
-  }, /*#__PURE__*/_react.default.createElement(_addSong.default, null))));
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement(_addSong.default, null))));
 }
 
 var _default = App;
