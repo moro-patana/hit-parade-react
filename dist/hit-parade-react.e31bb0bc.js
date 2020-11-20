@@ -34105,7 +34105,7 @@ function SongItem(_ref) {
     } else {
       return /*#__PURE__*/_react.default.createElement("i", {
         onClick: function onClick() {
-          return addToCart(song.id);
+          return addToCart(song);
         },
         className: "ri-shopping-cart-line"
       });
