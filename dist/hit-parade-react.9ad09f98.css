@@ -50,5 +50,14 @@ li {
     line-height: 78px;
     color: #000000;
 }
+.add-new-song {
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
