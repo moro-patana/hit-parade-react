@@ -2,6 +2,18 @@ body {
     margin: 0;
     padding: 1rem;
 }
+#root header,
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+#root header i {
+    padding: 1rem;
+}
 .song-list {
     display: flex;
     flex-direction: row;
