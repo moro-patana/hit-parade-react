@@ -3,9 +3,16 @@ body {
     padding: 1rem;
 }
 .song-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background: #272343;
     border-radius: 5px;
     margin-bottom: 1rem;
     padding: 1rem;
     color: #ffff;
+}
+.song {
+    display: flex;
+    flex-direction: column;
 }
