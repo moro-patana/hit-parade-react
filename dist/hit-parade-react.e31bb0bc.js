@@ -29780,7 +29780,9 @@ module.exports = [{
   "price": "1000 Ar",
   "style": "Slow",
   "lyrics": "",
-  "isFavorite": false
+  "isFavorite": false,
+  "upvote": 10,
+  "downvote": 1
 }, {
   "id": 1605790071018,
   "title": "Power of love",
@@ -29788,7 +29790,9 @@ module.exports = [{
   "price": "2000 Ar",
   "style": "Slow",
   "lyrics": "",
-  "isFavorite": false
+  "isFavorite": false,
+  "upvote": 30,
+  "downvote": 0
 }, {
   "id": 1605790140520,
   "title": "Couleranao Coulerako",
@@ -29796,7 +29800,9 @@ module.exports = [{
   "price": "5000Ar",
   "style": "Kawitry",
   "lyrics": "",
-  "isFavorite": false
+  "isFavorite": false,
+  "upvote": 90,
+  "downvote": 20
 }, {
   "id": 1605790106952,
   "title": "Miverena aty ANtsihanaka",
@@ -29804,7 +29810,9 @@ module.exports = [{
   "price": "3000Ar",
   "style": "country",
   "lyrics": "",
-  "isFavorite": false
+  "isFavorite": false,
+  "upvote": 100,
+  "downvote": 15
 }];
 },{}],"useContext.js":[function(require,module,exports) {
 "use strict";
