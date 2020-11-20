@@ -1,31 +1,31 @@
-import React, { useContext} from "react"
+import React, { useContext, useState} from "react"
 import { Contexts } from "../useContext"
 function SongItem() {
-    const {songs, setSongs} = useContext(Contexts)
-    console.log(songs);
+    const {songs, toggleUpvote, toggleDownvote} = useContext(Contexts)
+  
 
     return (
         <div>
             {songs.map(song => (
-                <div className="song-list">
-                    <i class="ri-heart-line"></i>
+                <div className="song-list" key={song.id}>
+                    <i className="ri-heart-line" ></i>
                     <div className="song">
                         <h3>{song.title}</h3>
                         <span>{song.artist}</span>
                     </div>
-                    <div class="upvote">
+                    <div className="upvote">
                         <span>{song.upvote}</span>
-                        <i class="ri-arrow-up-line"></i>
+                        <i className="ri-arrow-up-line" onClick={() => toggleUpvote(song.id)}></i>
                     </div>
-                    <div class="downvote">
+                    <div className="downvote">
                         <span>{song.downvote}</span>
-                        <i class="ri-arrow-down-line"></i>
+                        <i className="ri-arrow-down-line" onClick={() => toggleDownvote(song.id)}></i>
                     </div>
-                    <div class="cart">
-                        <i class="ri-shopping-cart-line"></i>
+                    <div className="cart">
+                        <i className="ri-shopping-cart-line"></i>
                     </div>
-                    <div class="lyrics">
-                        <i class="ri-more-line"></i>
+                    <div className="lyrics">
+                        <i className="ri-more-line"></i>
                     </div>
                 </div>
         

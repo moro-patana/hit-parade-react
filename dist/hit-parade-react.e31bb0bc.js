@@ -29833,6 +29833,12 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -29857,10 +29863,41 @@ function ContextProvider(props) {
 
   (0, _react.useEffect)(function () {
     setSongs(_songsData.default);
-  });
+  }, []);
+
+  function toggleUpvote(id) {
+    var upvoteUpdate = songs.map(function (song) {
+      if (song.id === Number(id)) {
+        console.log(song.upvote);
+        return _objectSpread(_objectSpread({}, song), {}, {
+          upvote: song.upvote + 1
+        });
+      }
+
+      return _objectSpread({}, song);
+    });
+    setSongs(upvoteUpdate);
+  }
+
+  function toggleDownvote(id) {
+    var downVoteUpdate = songs.map(function (song) {
+      if (song.id === Number(id)) {
+        console.log(song.downvote);
+        return _objectSpread(_objectSpread({}, song), {}, {
+          downvote: song.downvote + 1
+        });
+      }
+
+      return _objectSpread({}, song);
+    });
+    setSongs(downVoteUpdate);
+  }
+
   return /*#__PURE__*/_react.default.createElement(Contexts.Provider, {
     value: {
-      songs: songs
+      songs: songs,
+      toggleUpvote: toggleUpvote,
+      toggleDownvote: toggleDownvote
     }
   }, props.children);
 }
@@ -33999,32 +34036,39 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function SongItem() {
   var _useContext = (0, _react.useContext)(_useContext2.Contexts),
       songs = _useContext.songs,
-      setSongs = _useContext.setSongs;
+      toggleUpvote = _useContext.toggleUpvote,
+      toggleDownvote = _useContext.toggleDownvote;
 
-  console.log(songs);
   return /*#__PURE__*/_react.default.createElement("div", null, songs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "song-list"
+      className: "song-list",
+      key: song.id
     }, /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-heart-line"
+      className: "ri-heart-line"
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("div", {
-      class: "upvote"
+      className: "upvote"
     }, /*#__PURE__*/_react.default.createElement("span", null, song.upvote), /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-arrow-up-line"
+      className: "ri-arrow-up-line",
+      onClick: function onClick() {
+        return toggleUpvote(song.id);
+      }
     })), /*#__PURE__*/_react.default.createElement("div", {
-      class: "downvote"
+      className: "downvote"
     }, /*#__PURE__*/_react.default.createElement("span", null, song.downvote), /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-arrow-down-line"
+      className: "ri-arrow-down-line",
+      onClick: function onClick() {
+        return toggleDownvote(song.id);
+      }
     })), /*#__PURE__*/_react.default.createElement("div", {
-      class: "cart"
+      className: "cart"
     }, /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-shopping-cart-line"
+      className: "ri-shopping-cart-line"
     })), /*#__PURE__*/_react.default.createElement("div", {
-      class: "lyrics"
+      className: "lyrics"
     }, /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-more-line"
+      className: "ri-more-line"
     })));
   }));
 }
