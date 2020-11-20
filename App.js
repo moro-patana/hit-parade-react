@@ -16,6 +16,7 @@ function App() {
                     <i class="ri-arrow-down-line"></i>
                     <i class="ri-arrow-up-line"></i>
                     <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-more-line"></i>
                 </div>
         
         ))}

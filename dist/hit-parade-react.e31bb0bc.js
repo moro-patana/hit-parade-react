@@ -29891,6 +29891,8 @@ function App() {
       class: "ri-arrow-up-line"
     }), /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-shopping-cart-line"
+    }), /*#__PURE__*/_react.default.createElement("i", {
+      class: "ri-more-line"
     }));
   }));
 }
