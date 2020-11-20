@@ -47,7 +47,8 @@ h4 {
 i {
     font-size: 30px;
 }
-.ri-heart-line {
+.ri-heart-line,
+.ri-heart-fill {
     color: orange;
 }
 li {

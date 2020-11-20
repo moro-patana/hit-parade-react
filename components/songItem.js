@@ -2,14 +2,6 @@ import React, { useContext, useState} from "react"
 import { Contexts } from "../useContext"
 function SongItem(song) {
     const {songs, toggleUpvote, toggleDownvote, toggleFavorite} = useContext(Contexts)
-    // function heartIcon() {
-    //     if(song.isFavorite) {
-    //         return (<i className="ri-heart-fill" onClick={console.log("hey")}></i>)
-    //     } else {
-    //         return (<i onClick={() => toggleFavorite(song.id)} className="ri-heart-line"></i>)
-    //     }
-        
-    // }
 
   
 

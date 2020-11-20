@@ -34082,14 +34082,7 @@ function SongItem(song) {
       songs = _useContext.songs,
       toggleUpvote = _useContext.toggleUpvote,
       toggleDownvote = _useContext.toggleDownvote,
-      toggleFavorite = _useContext.toggleFavorite; // function heartIcon() {
-  //     if(song.isFavorite) {
-  //         return (<i className="ri-heart-fill" onClick={console.log("hey")}></i>)
-  //     } else {
-  //         return (<i onClick={() => toggleFavorite(song.id)} className="ri-heart-line"></i>)
-  //     }
-  // }
-
+      toggleFavorite = _useContext.toggleFavorite;
 
   return /*#__PURE__*/_react.default.createElement("div", null, songs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
