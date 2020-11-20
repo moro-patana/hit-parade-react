@@ -7,8 +7,6 @@ import Styles from "./components/styles"
 import AddSong from "./components/addSong"
 import Cart from "./components/cart"
 function App() {
-    const {songs, setSongs} = useContext(Contexts)
-    console.log(songs);
     return (
         <div>
         <Header/>
