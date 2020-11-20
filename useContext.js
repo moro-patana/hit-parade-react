@@ -7,6 +7,20 @@ function ContextProvider(props) {
     useEffect(() => {
         setSongs(SongsData)
     }, [])
+    function toggleFavorite(id) {
+        const favoritedSongs = songs.map(song => {
+            if(song.id === Number(id)) {
+              console.log(song.isFavorite);
+              return {
+                  ...song,
+                  isFavorite: !song.isFavorite
+              }
+            } 
+            return {...song};
+        })
+        setSongs(favoritedSongs)
+     }
+ 
     function toggleUpvote(id) {
         const upvoteUpdate = songs.map(song => {
             if(song.id === Number(id)) {
@@ -35,7 +49,7 @@ function ContextProvider(props) {
      }
  
     return (
-      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote}}>
+      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote, toggleFavorite}}>
           {props.children}
       </Contexts.Provider>
     )

@@ -29865,6 +29865,20 @@ function ContextProvider(props) {
     setSongs(_songsData.default);
   }, []);
 
+  function toggleFavorite(id) {
+    var favoritedSongs = songs.map(function (song) {
+      if (song.id === Number(id)) {
+        console.log(song.isFavorite);
+        return _objectSpread(_objectSpread({}, song), {}, {
+          isFavorite: !song.isFavorite
+        });
+      }
+
+      return _objectSpread({}, song);
+    });
+    setSongs(favoritedSongs);
+  }
+
   function toggleUpvote(id) {
     var upvoteUpdate = songs.map(function (song) {
       if (song.id === Number(id)) {
@@ -29897,7 +29911,8 @@ function ContextProvider(props) {
     value: {
       songs: songs,
       toggleUpvote: toggleUpvote,
-      toggleDownvote: toggleDownvote
+      toggleDownvote: toggleDownvote,
+      toggleFavorite: toggleFavorite
     }
   }, props.children);
 }
