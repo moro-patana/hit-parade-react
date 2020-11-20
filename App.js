@@ -7,7 +7,7 @@ function App() {
         <>
         <h2>Hello</h2>
         {songs.map(song => (
-                <div>
+                <div className="song-list">
                     <i class="ri-heart-line"></i>
                     <div>
                         <h3>{song.title}</h3>

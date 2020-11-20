@@ -29879,7 +29879,9 @@ function App() {
 
   console.log(songs);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Hello"), songs.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("i", {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      className: "song-list"
+    }, /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-heart-line"
     }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-arrow-down-line"
