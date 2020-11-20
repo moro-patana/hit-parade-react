@@ -13,10 +13,18 @@ function App() {
                         <h3>{song.title}</h3>
                         <span>{song.artist}</span>
                     </div>
-                    <i class="ri-arrow-down-line"></i>
-                    <i class="ri-arrow-up-line"></i>
-                    <i class="ri-shopping-cart-line"></i>
-                    <i class="ri-more-line"></i>
+                    <div class="upvote">
+                        <i class="ri-arrow-up-line"></i>
+                    </div>
+                    <div class="downvote">
+                        <i class="ri-arrow-down-line"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="ri-shopping-cart-line"></i>
+                    </div>
+                    <div class="lyrics">
+                        <i class="ri-more-line"></i>
+                    </div>
                 </div>
         
         ))}
