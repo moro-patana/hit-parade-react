@@ -29927,7 +29927,7 @@ function ContextProvider(props) {
   }
 
   function deleteItem(songId) {
-    setCartItems(function (prevItems) {
+    setCartItem(function (prevItems) {
       return prevItems.filter(function (cartItem) {
         return cartItem.id !== songId;
       });
@@ -29941,7 +29941,8 @@ function ContextProvider(props) {
       toggleDownvote: toggleDownvote,
       toggleFavorite: toggleFavorite,
       addToCart: addToCart,
-      deleteItem: deleteItem
+      deleteItem: deleteItem,
+      cartItem: cartItem
     }
   }, props.children);
 }
@@ -34082,7 +34083,32 @@ function SongItem(song) {
       songs = _useContext.songs,
       toggleUpvote = _useContext.toggleUpvote,
       toggleDownvote = _useContext.toggleDownvote,
-      toggleFavorite = _useContext.toggleFavorite;
+      toggleFavorite = _useContext.toggleFavorite,
+      cartItem = _useContext.cartItem,
+      addToCart = _useContext.addToCart,
+      deleteItem = _useContext.deleteItem;
+
+  function cartIcon() {
+    var alreadyInCart = cartItem.some(function (item) {
+      return item.id === song.id;
+    });
+
+    if (alreadyInCart) {
+      return /*#__PURE__*/_react.default.createElement("i", {
+        onClick: function onClick() {
+          return deleteItem(song.id);
+        },
+        className: "ri-shopping-cart-fill"
+      });
+    } else {
+      return /*#__PURE__*/_react.default.createElement("i", {
+        onClick: function onClick() {
+          return addToCart(song);
+        },
+        className: "ri-shopping-cart-line"
+      });
+    }
+  }
 
   return /*#__PURE__*/_react.default.createElement("div", null, songs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
@@ -34116,9 +34142,7 @@ function SongItem(song) {
       }
     })), /*#__PURE__*/_react.default.createElement("div", {
       className: "cart"
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "ri-shopping-cart-line"
-    })), /*#__PURE__*/_react.default.createElement("div", {
+    }, cartIcon()), /*#__PURE__*/_react.default.createElement("div", {
       className: "lyrics"
     }, /*#__PURE__*/_react.default.createElement("i", {
       className: "ri-more-line"
