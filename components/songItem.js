@@ -1,14 +1,16 @@
 import React, { useContext, useState} from "react"
 import { Contexts } from "../useContext"
-function SongItem(song) {
+
+function SongItem({ song }) {
     const {songs, toggleUpvote, toggleDownvote, toggleFavorite, cartItem,
     addToCart, deleteItem} = useContext(Contexts)
+
     function cartIcon() {
-        const alreadyInCart = cartItem.some((item => item.id === song.id))
+        const alreadyInCart = cartItem.some((cartItem => cartItem.id === song.id))
             if(alreadyInCart) {
               return (<i onClick={() => deleteItem(song.id)} className="ri-shopping-cart-fill"></i>)
           } else {
-              return (<i onClick={() => addToCart(song)} className="ri-shopping-cart-line"></i>)
+              return (<i onClick={() => addToCart(song.id)} className="ri-shopping-cart-line"></i>)
           }
       }
     
