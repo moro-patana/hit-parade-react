@@ -9,7 +9,7 @@ function App() {
         {songs.map(song => (
                 <div className="song-list">
                     <i class="ri-heart-line"></i>
-                    <div>
+                    <div className="song">
                         <h3>{song.title}</h3>
                         <span>{song.artist}</span>
                     </div>
