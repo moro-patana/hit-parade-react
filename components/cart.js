@@ -2,12 +2,14 @@ import React from "react"
 function Cart() {
     return (
         <div>
-            <i class="ri-delete-bin-line"></i>
-            <div className="song">
-              <h3>{song.title}</h3>
-              <span>{song.artist}</span>
+            <div class="song-list">
+                <i class="ri-delete-bin-line"></i>
+                <div className="song">
+                  <h3>Title</h3>
+                  <span>Artist</span>
+                </div>
+                <p>0 Ar</p>
             </div>
-            <p>0 Ar</p>
             <p className="totalPrice">Total:</p>
             <button className="buy">Buy</button>
         </div>
