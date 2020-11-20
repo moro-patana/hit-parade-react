@@ -3,6 +3,7 @@ import SongsData from "./songsData.json"
 const Contexts = React.createContext()
 function ContextProvider(props) {
     const [songs, setSongs] = useState([])
+    const [cartItem, setCartItem] = useState([])
  
     useEffect(() => {
         setSongs(SongsData)
@@ -47,9 +48,14 @@ function ContextProvider(props) {
         })
         setSongs(downVoteUpdate)
      }
- 
+ function addToCart(song) {
+     setCartItem(prevItems => [...prevItems, song])
+ }
+ function deleteItem(songId) {
+    setCartItems(prevItems => prevItems.filter(cartItem => cartItem.id !== songId))}
+
     return (
-      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote, toggleFavorite}}>
+      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote, toggleFavorite, addToCart, deleteItem}}>
           {props.children}
       </Contexts.Provider>
     )
