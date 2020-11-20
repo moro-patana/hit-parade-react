@@ -80,12 +80,23 @@ label {
     font-size: 20px;
     padding-bottom: 1rem;
 }
-.add {
+.add,
+.buy {
     width: 100px;
     border: none;
     border-radius: 15px;
     padding: 1rem;
+}
+.add {
     background-color: cadetblue;
     color: white;
+    text-transform: uppercase;
+}
+.price {
+    color: orange;
+    font-size: 18px;
+}
+.buy {
+    background-color: orange;
     text-transform: uppercase;
 }
