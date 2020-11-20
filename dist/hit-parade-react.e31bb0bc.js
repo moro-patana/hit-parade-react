@@ -34082,31 +34082,30 @@ function SongItem(song) {
       songs = _useContext.songs,
       toggleUpvote = _useContext.toggleUpvote,
       toggleDownvote = _useContext.toggleDownvote,
-      toggleFavorite = _useContext.toggleFavorite;
+      toggleFavorite = _useContext.toggleFavorite; // function heartIcon() {
+  //     if(song.isFavorite) {
+  //         return (<i className="ri-heart-fill" onClick={console.log("hey")}></i>)
+  //     } else {
+  //         return (<i onClick={() => toggleFavorite(song.id)} className="ri-heart-line"></i>)
+  //     }
+  // }
 
-  function heartIcon() {
-    if (song.isFavorite) {
-      return /*#__PURE__*/_react.default.createElement("i", {
-        className: "ri-heart-fill",
-        onClick: function onClick() {
-          return toggleFavorite(song.id);
-        }
-      });
-    } else {
-      return /*#__PURE__*/_react.default.createElement("i", {
-        onClick: function onClick() {
-          return toggleFavorite(song.id);
-        },
-        className: "ri-heart-line"
-      });
-    }
-  }
 
   return /*#__PURE__*/_react.default.createElement("div", null, songs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
       className: "song-list",
       key: song.id
-    }, heartIcon(), /*#__PURE__*/_react.default.createElement("div", {
+    }, song.isFavorite ? /*#__PURE__*/_react.default.createElement("i", {
+      className: "ri-heart-fill",
+      onClick: function onClick() {
+        return toggleFavorite(song.id);
+      }
+    }) : /*#__PURE__*/_react.default.createElement("i", {
+      className: "ri-heart-line",
+      onClick: function onClick() {
+        return toggleFavorite(song.id);
+      }
+    }), /*#__PURE__*/_react.default.createElement("div", {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("div", {
       className: "upvote"
@@ -34257,7 +34256,7 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _useContext2 = require("./useContext");
+var _useContext = require("./useContext");
 
 var _Header = _interopRequireDefault(require("./components/Header"));
 
@@ -34278,11 +34277,6 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function App() {
-  var _useContext = (0, _react.useContext)(_useContext2.Contexts),
-      songs = _useContext.songs,
-      setSongs = _useContext.setSongs;
-
-  console.log(songs);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"

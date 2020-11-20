@@ -2,14 +2,14 @@ import React, { useContext, useState} from "react"
 import { Contexts } from "../useContext"
 function SongItem(song) {
     const {songs, toggleUpvote, toggleDownvote, toggleFavorite} = useContext(Contexts)
-    function heartIcon() {
-        if(song.isFavorite) {
-            return (<i className="ri-heart-fill" onClick={() => toggleFavorite(song.id)}></i>)
-        } else {
-            return (<i onClick={() => toggleFavorite(song.id)} className="ri-heart-line"></i>)
-        }
+    // function heartIcon() {
+    //     if(song.isFavorite) {
+    //         return (<i className="ri-heart-fill" onClick={console.log("hey")}></i>)
+    //     } else {
+    //         return (<i onClick={() => toggleFavorite(song.id)} className="ri-heart-line"></i>)
+    //     }
         
-    }
+    // }
 
   
 
@@ -17,8 +17,10 @@ function SongItem(song) {
         <div>
             {songs.map(song => (
                 <div className="song-list" key={song.id}>
-                    {/* <i className="ri-heart-line" ></i> */}
-                    {heartIcon()}
+                    {song.isFavorite 
+                    ? <i className="ri-heart-fill" onClick={() => toggleFavorite(song.id)}></i> 
+                    : <i className="ri-heart-line" onClick={() => toggleFavorite(song.id)}></i>}
+                    {/* {heartIcon()} */}
                     <div className="song">
                         <h3>{song.title}</h3>
                         <span>{song.artist}</span>
