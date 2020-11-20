@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import SongItem from "./components/songItem"
 import {Switch, Route} from "react-router-dom"
 import Styles from "./components/styles"
+import AddSong from "./components/addSong"
 function App() {
     const {songs, setSongs} = useContext(Contexts)
     console.log(songs);
@@ -16,6 +17,9 @@ function App() {
             </Route>
             <Route path="/styles">
                 <Styles/>
+            </Route>
+            <Route path="/addsong">
+                <AddSong/>
             </Route>
         </Switch>
         </div>

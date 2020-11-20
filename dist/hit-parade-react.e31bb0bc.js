@@ -34062,7 +34062,55 @@ function Styles() {
 
 var _default = Styles;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../useContext":"useContext.js"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../useContext":"useContext.js"}],"components/addSong.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function AddSong() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Title"
+  }), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Artist"
+  }), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: "Price"
+  }), /*#__PURE__*/_react.default.createElement("select", {
+    name: "pets",
+    id: "pet-select"
+  }, /*#__PURE__*/_react.default.createElement("option", {
+    value: ""
+  }, "Styles"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "slow"
+  }, "Slow"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "salegy"
+  }, "Salegy"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "reggae"
+  }, "Reggae"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "kawitry"
+  }, "Kawitry"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "country"
+  }, "Country"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "rock"
+  }, "Rock"), /*#__PURE__*/_react.default.createElement("option", {
+    value: "rap"
+  }, "Rap")), /*#__PURE__*/_react.default.createElement("label", null, "Lyrics"), /*#__PURE__*/_react.default.createElement("textarea", null), /*#__PURE__*/_react.default.createElement("button", {
+    className: "add"
+  }, "Add")));
+}
+
+var _default = AddSong;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34082,6 +34130,8 @@ var _reactRouterDom = require("react-router-dom");
 
 var _styles = _interopRequireDefault(require("./components/styles"));
 
+var _addSong = _interopRequireDefault(require("./components/addSong"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -34099,12 +34149,14 @@ function App() {
     path: "/"
   }, /*#__PURE__*/_react.default.createElement(_songItem.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/styles"
-  }, /*#__PURE__*/_react.default.createElement(_styles.default, null))));
+  }, /*#__PURE__*/_react.default.createElement(_styles.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/addsong"
+  }, /*#__PURE__*/_react.default.createElement(_addSong.default, null))));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./useContext":"useContext.js","./components/Header":"components/Header.js","./components/songItem":"components/songItem.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./components/styles":"components/styles.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./useContext":"useContext.js","./components/Header":"components/Header.js","./components/songItem":"components/songItem.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./components/styles":"components/styles.js","./components/addSong":"components/addSong.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
