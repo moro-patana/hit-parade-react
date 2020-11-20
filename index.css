@@ -59,3 +59,28 @@ form {
     flex-direction: column;
     padding: 1rem;
 }
+input,
+select,
+textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+input,
+select {
+    font-size: 18px;
+}
+label {
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+.add {
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: cadetblue;
+    color: white;
+    text-transform: uppercase;
+}
