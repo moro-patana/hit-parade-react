@@ -44,5 +44,11 @@ i {
 .ri-heart-line {
     color: orange;
 }
+li {
+    list-style: none;
+    font-size: 40px;
+    line-height: 78px;
+    color: #000000;
+}
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
