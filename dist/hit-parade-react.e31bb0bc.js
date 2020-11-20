@@ -29879,7 +29879,7 @@ function App() {
 
   console.log(songs);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "Hello"), songs.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("button", null, "upvote"), /*#__PURE__*/_react.default.createElement("button", null, "downvote"));
+    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("button", null), /*#__PURE__*/_react.default.createElement("button", null));
   }));
 }
 
@@ -34010,7 +34010,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59087" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60502" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

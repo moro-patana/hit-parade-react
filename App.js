@@ -12,8 +12,8 @@ function App() {
                         <h3>{song.title}</h3>
                         <span>{song.artist}</span>
                     </div>
-                    <button>upvote</button>
-                    <button>downvote</button>
+                    <button></button>
+                    <button></button>
                 </div>
         
         ))}
