@@ -1,2 +1,13 @@
+body {
+    margin: 0;
+    padding: 1rem;
+}
+.song-list {
+    background: #272343;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #ffff;
+}
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
