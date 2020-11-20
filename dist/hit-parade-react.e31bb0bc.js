@@ -29888,7 +29888,7 @@ function App() {
     }), /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-arrow-up-line"
     }), /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-shopping-cart-fill"
+      class: "ri-shopping-cart-line"
     }));
   }));
 }

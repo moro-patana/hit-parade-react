@@ -15,7 +15,7 @@ function App() {
                     </div>
                     <i class="ri-arrow-down-line"></i>
                     <i class="ri-arrow-up-line"></i>
-                    <i class="ri-shopping-cart-fill"></i>
+                    <i class="ri-shopping-cart-line"></i>
                 </div>
         
         ))}
