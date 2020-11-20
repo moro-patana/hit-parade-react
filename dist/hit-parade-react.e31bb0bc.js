@@ -29895,11 +29895,11 @@ function App() {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)), /*#__PURE__*/_react.default.createElement("div", {
       class: "upvote"
-    }, /*#__PURE__*/_react.default.createElement("i", {
+    }, /*#__PURE__*/_react.default.createElement("span", null, song.upvote), /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-arrow-up-line"
     })), /*#__PURE__*/_react.default.createElement("div", {
       class: "downvote"
-    }, /*#__PURE__*/_react.default.createElement("i", {
+    }, /*#__PURE__*/_react.default.createElement("span", null, song.downvote), /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-arrow-down-line"
     })), /*#__PURE__*/_react.default.createElement("div", {
       class: "cart"

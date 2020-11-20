@@ -14,9 +14,11 @@ function App() {
                         <span>{song.artist}</span>
                     </div>
                     <div class="upvote">
+                        <span>{song.upvote}</span>
                         <i class="ri-arrow-up-line"></i>
                     </div>
                     <div class="downvote">
+                        <span>{song.downvote}</span>
                         <i class="ri-arrow-down-line"></i>
                     </div>
                     <div class="cart">
