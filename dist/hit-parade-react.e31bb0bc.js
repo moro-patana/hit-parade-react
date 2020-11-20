@@ -33969,21 +33969,21 @@ function Header() {
 
   return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, /*#__PURE__*/_react.default.createElement("i", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
     class: "ri-fire-fill"
-  }), " Popular Songs")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/style"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, /*#__PURE__*/_react.default.createElement("i", {
-    class: "ri-heart-3-line"
-  }), " Styles")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }), /*#__PURE__*/_react.default.createElement("h2", null, "Popular Songs")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/styles"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "ri-heart-line"
+  }), /*#__PURE__*/_react.default.createElement("h2", null, "Styles")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/addsong"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, /*#__PURE__*/_react.default.createElement("i", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
     class: "ri-emotion-line"
-  }), " Add")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }), /*#__PURE__*/_react.default.createElement("h2", null, "Add")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/cart"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, /*#__PURE__*/_react.default.createElement("i", {
+  }, /*#__PURE__*/_react.default.createElement("i", {
     class: "ri-shopping-cart-2-line"
-  }), " Cart")));
+  }), /*#__PURE__*/_react.default.createElement("h2", null, "Cart")));
 }
 
 var _default = Header;

@@ -7,16 +7,20 @@ function Header() {
     return (
       <header>
           <Link to="/">
-             <h2><i class="ri-fire-fill"></i> Popular Songs</h2>
+             <i class="ri-fire-fill"></i> 
+             <h2>Popular Songs</h2>
           </Link>
-          <Link to="/style">
-              <h2><i class="ri-heart-3-line"></i> Styles</h2>
+          <Link to="/styles">
+              <i class="ri-heart-line"></i>
+              <h2>Styles</h2>
           </Link>
           <Link to="/addsong">
-              <h2><i class="ri-emotion-line"></i> Add</h2>
+              <i class="ri-emotion-line"></i> 
+              <h2>Add</h2>
           </Link>
           <Link to="/cart">
-              <h2><i class="ri-shopping-cart-2-line"></i> Cart</h2>
+              <i class="ri-shopping-cart-2-line"></i>
+              <h2>Cart</h2>
           </Link>
       </header>
     )
