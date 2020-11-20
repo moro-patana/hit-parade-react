@@ -16,3 +16,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+i {
+    font-size: 30px;
+}
+.ri-heart-line {
+    color: orange;
+}

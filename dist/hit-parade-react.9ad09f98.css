@@ -16,5 +16,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+i {
+    font-size: 30px;
+}
+.ri-heart-line {
+    color: orange;
+}
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
