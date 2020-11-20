@@ -96,6 +96,12 @@ label {
     color: orange;
     font-size: 18px;
 }
+.totalPrice {
+    text-align: end;
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem;
+}
 .buy {
     background-color: orange;
     text-transform: uppercase;
