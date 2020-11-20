@@ -34185,7 +34185,7 @@ function App() {
     path: "/styles"
   }, /*#__PURE__*/_react.default.createElement(_styles.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/addsong"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement(_addSong.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement("h4", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement(_addSong.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/cart"
   }, /*#__PURE__*/_react.default.createElement(_cart.default, null))));
 }
