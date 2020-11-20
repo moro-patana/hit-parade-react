@@ -16,9 +16,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+h3 {
+    margin: 0;
+}
+.song-list div,
+.ri-heart-line {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.ri-arrow-down-line,
+.ri-arrow-up-line {
+    padding-top: 2rem;
+}
 i {
     font-size: 30px;
-    padding: 1rem;
 }
 .ri-heart-line {
     color: orange;
