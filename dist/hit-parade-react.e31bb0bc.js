@@ -34075,7 +34075,9 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function AddSong() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "add-new-song"
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     placeholder: "Title"
   }), /*#__PURE__*/_react.default.createElement("input", {

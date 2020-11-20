@@ -1,7 +1,7 @@
 import React from "react"
 function AddSong() {
     return (
-        <div>
+        <div className="add-new-song">
             <h3>😃Add a new song</h3>
             <form>
                 <input type="text" placeholder="Title"/>
