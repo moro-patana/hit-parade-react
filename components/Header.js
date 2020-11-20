@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Contexts } from "../useContext"
 
 function Header() {
-    const {songs} = useContext(Context)
+    const {songs} = useContext(Contexts)
     return (
       <header>
           <Link to="/">
