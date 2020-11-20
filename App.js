@@ -1,11 +1,12 @@
 import React, { useContext } from "react"
 import { Contexts } from "./useContext"
+import Header from "./components/Header"
 function App() {
     const {songs, setSongs} = useContext(Contexts)
     console.log(songs);
     return (
         <>
-        <h2>Hello</h2>
+        <Header/>
         {songs.map(song => (
                 <div className="song-list">
                     <i class="ri-heart-line"></i>
