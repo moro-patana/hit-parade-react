@@ -34131,7 +34131,9 @@ function Cart() {
     class: "ri-delete-bin-line"
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "song"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Title"), /*#__PURE__*/_react.default.createElement("span", null, "Artist")), /*#__PURE__*/_react.default.createElement("p", null, "0 Ar")), /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Title"), /*#__PURE__*/_react.default.createElement("span", null, "Artist")), /*#__PURE__*/_react.default.createElement("p", {
+    className: "price"
+  }, "0 Ar")), /*#__PURE__*/_react.default.createElement("p", {
     className: "totalPrice"
   }, "Total:"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buy"

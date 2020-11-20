@@ -8,7 +8,7 @@ function Cart() {
                   <h3>Title</h3>
                   <span>Artist</span>
                 </div>
-                <p>0 Ar</p>
+                <p className="price">0 Ar</p>
             </div>
             <p className="totalPrice">Total:</p>
             <button className="buy">Buy</button>
