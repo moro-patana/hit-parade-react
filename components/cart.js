@@ -6,8 +6,8 @@ function Cart() {
         <>
         <div>
         {cartItem.map(item => (
-        <div class="song-list"  key={item.id}>
-            <i class="ri-delete-bin-line"></i>
+        <div className="song-list"  key={item.id}>
+            <i className="ri-delete-bin-line"></i>
             <div className="song">
               <h3>{item.title}</h3>
               <span>{item.artist}</span>

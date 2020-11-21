@@ -34258,10 +34258,10 @@ function Cart() {
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", null, cartItem.map(function (item) {
     return /*#__PURE__*/_react.default.createElement("div", {
-      class: "song-list",
+      className: "song-list",
       key: item.id
     }, /*#__PURE__*/_react.default.createElement("i", {
-      class: "ri-delete-bin-line"
+      className: "ri-delete-bin-line"
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("span", null, item.artist)), /*#__PURE__*/_react.default.createElement("p", {
