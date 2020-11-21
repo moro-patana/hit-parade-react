@@ -9,12 +9,17 @@ import Cart from "./components/cart"
 import SongStyleItem from "./components/songStyleItem"
 function App() {
     const { songs } = useContext(Contexts)
+    const sortedSong = songs.sort((songA, songB) => {
+        const ratioA = songA.upvote - songA.downvote;
+        const ratioB = songB.upvote - songB.downvote;
+        return ratioB - ratioA;
+  });
     return (
         <div>
         <Header/>
         <Switch>
             <Route exact path="/">
-            {songs.map(song => ( <SongItem key={song.id} song={song}/> ))}
+            {sortedSong.map(song => ( <SongItem key={song.id} song={song}/> ))}
             </Route>
             <Route exact path="/styles">
                 <Styles/>

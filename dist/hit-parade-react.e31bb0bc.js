@@ -34420,10 +34420,15 @@ function App() {
   var _useContext = (0, _react.useContext)(_useContext2.Contexts),
       songs = _useContext.songs;
 
+  var sortedSong = songs.sort(function (songA, songB) {
+    var ratioA = songA.upvote - songA.downvote;
+    var ratioB = songB.upvote - songB.downvote;
+    return ratioB - ratioA;
+  });
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/"
-  }, songs.map(function (song) {
+  }, sortedSong.map(function (song) {
     return /*#__PURE__*/_react.default.createElement(_songItem.default, {
       key: song.id,
       song: song
@@ -34489,7 +34494,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58876" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49902" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
