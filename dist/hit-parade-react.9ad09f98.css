@@ -42,6 +42,7 @@ h4 {
     text-align: center;
     font-size: 40px;
     padding: 1rem;
+    margin: 0;
 }
 .song-list div,
 .ri-heart-line,
