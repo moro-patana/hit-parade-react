@@ -2,11 +2,12 @@ import React, { useContext, useState} from "react"
 import { Contexts } from "../useContext"
 
 function SongItem({song}) {
-    const {songs, toggleUpvote, toggleDownvote, toggleFavorite, cartItem,
+    const { toggleUpvote, toggleDownvote, toggleFavorite, cartItem,
     addToCart, deleteItem} = useContext(Contexts)
 
     function cartIcon() {
-        const alreadyInCart = cartItem.some((cartItem => cartItem.id === song.id))
+        console.log(cartItem);
+        const alreadyInCart = cartItem.some(item => item.id === song.id)
             if(alreadyInCart) {
               return (<i onClick={() => deleteItem(song.id)} className="ri-shopping-cart-fill"></i>)
           } else {
@@ -18,8 +19,7 @@ function SongItem({song}) {
 
     return (
         <div>
-            {songs.map(song => (
-                <div className="song-list" key={song.id}>
+                <div className="song-list" >
                     {song.isFavorite 
                     ? <i className="ri-heart-fill" onClick={() => toggleFavorite(song.id)}></i> 
                     : <i className="ri-heart-line" onClick={() => toggleFavorite(song.id)}></i>}
@@ -44,9 +44,6 @@ function SongItem({song}) {
                         <i className="ri-more-line"></i>
                     </div>
                 </div>
-        
-        ))}
-    
         </div>
     )
 }
