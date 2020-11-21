@@ -34254,24 +34254,22 @@ function Cart() {
   var _useContext = (0, _react.useContext)(_useContext2.Contexts),
       cartItem = _useContext.cartItem;
 
-  var mapCartItem = cartItem.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement("h1", null, item.title);
-  });
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, cartItem.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
-      class: "song-list"
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", null, cartItem.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      class: "song-list",
+      key: item.id
     }, /*#__PURE__*/_react.default.createElement("i", {
       class: "ri-delete-bin-line"
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("span", null, item.artist)), /*#__PURE__*/_react.default.createElement("p", {
       className: "price"
-    }, item.price)), /*#__PURE__*/_react.default.createElement("p", {
-      className: "totalPrice"
-    }, "Total:"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "buy"
-    }, "Buy"));
-  }));
+    }, item.price));
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "totalPrice"
+  }, "Total:"), /*#__PURE__*/_react.default.createElement("button", {
+    className: "buy"
+  }, "Buy")));
 }
 
 var _default = Cart;
