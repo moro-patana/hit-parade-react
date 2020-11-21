@@ -8,9 +8,12 @@ body {
     justify-content: space-between;
     padding-bottom: 2rem;
 }
-#root header p {
+.menu {
     margin: 0;
     padding: 1rem;
+}
+.menu:hover {
+    font-weight: bold;
 }
 a,
 .song-style {
