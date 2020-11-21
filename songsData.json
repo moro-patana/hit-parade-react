@@ -5,7 +5,29 @@
         "artist": "Westlife",
         "price": 1000,
         "style": "Slow",
-        "lyrics": "",
+        "lyrics": `Day after day
+        Time pass away
+        And I just can't get you off my mind
+        Nobody knows
+        I hide it inside
+        I keep on searching, but I can't find
+        The courage to show to letting you know
+        I've never felt so much love before
+        And once again I'm thinking about
+        Taking the easy way out
+        But if I let you go, I will never know
+        What my life would be holding you close to me
+        Will I ever see you smiling back at me?
+        (Oh yeah) how will I know if I let you go?
+        Night after night I hear my self say
+        Why can't this feeling just fade away?
+        There's no one like you, you speak to my heart
+        It's such a shame we're worlds apart
+        I'm too shy to ask, I'm to proud to lose
+        But sooner or later I've got to choose
+        And once again I'm thinking about
+        Taking the easy way out
+        But if I let you go I will never know…`,
         "isFavorite": false,
         "upvote": 10,
         "downvote": 1
@@ -16,18 +38,71 @@
         "artist": "Celine Dion",
         "price": 2000,
         "style": "Slow",
-        "lyrics": "",
+        "lyrics": `The whispers in the morning
+        Of lovers sleeping tight
+        Are rolling by like thunder now
+        As I look in your eyes
+        I hold on to your body
+        And feel each move you make
+        Your voice is warm and tender
+        A love that I could not forsake
+        'Cause I'm your lady
+        And you are my man
+        Whenever you reach for me
+        I'll do all that I can
+        Lost is how I'm feeling lying in your arms
+        When the world outside's too much to take
+        That all ends when I'm with you
+        Even though there may be times
+        It seems I'm far away
+        Never wonder where I am
+        'Cause I am always by your side
+        'Cause I'm your lady
+        And you are my man
+        Whenever you reach for me
+        I'll do all that I can
+        We're heading for something
+        Somewhere I've never been
+        Sometimes I am frightened
+        But I'm ready to learn
+        Of the power of love
+        The sound of your heart…`,
         "isFavorite": false,
         "upvote": 30,
         "downvote": 0
     },
     {
         "id": 1605790140520,
-        "title": "Couleranao Coulerako",
-        "artist": "Dadi Love",
+        "title": "Gone Crazy",
+        "artist": "Alan Jackson",
         "price": 5000,
-        "style": "Kawitry",
-        "lyrics": "",
+        "style": "Country",
+        "lyrics": `Here I am all alone again tonight
+        In this old empty house
+        It's hard to learn what you don't think you need
+        You can't live without
+        Never leave the sound of the telephone
+        But ever since you left
+        I've been gone
+        Gone crazy, goin' out of my mind
+        I've asked myself the reason,
+        At least a thousand times
+        Goin' up and down this hallway
+        Tryin' to leave the pain behind
+        Ever since you left,
+        I've been gone
+        I never saw your face this many times
+        When you were really here
+        The things you said I never understood
+        Are now crystal clear
+        I never spent this much time at home
+        But ever since you left,
+        I've been gone
+        Gone crazy, goin' out of my mind
+        I've asked myself the reason,
+        At least a thousand times
+        Goin' up and down this hallway
+        Tryin' to leave the pain…`,
         "isFavorite": false,
         "upvote": 90,
         "downvote": 20
@@ -38,7 +113,36 @@
         "artist": "Novah Dakoto",
         "price": 3000,
         "style": "country",
-        "lyrics": "",
+        "lyrics": `Efa ela loatra izay
+        No nandehananao nandao
+        ity toerana izay niarahana
+        Indrisy anefa tsy nisy azoko natao
+        fa dia ny mirary ny hiverenanao
+        
+        Izay rehetra mahita ahy
+        dia mandatsa avokoa
+        Tsy kivy anefa aho
+        fa manana anao
+        
+        Mba miverena aty Antsihanaka aty e
+        Raha henonao izao antsoko izao
+        Mba miverena aty Antsihanaka aty e
+        Havanao ity nilaozanao ity
+        
+        Na lavitra aza ianao
+        aza adino ny efa vita
+        aza adino hoy aho
+        na dia iray minitra
+        
+        Ny taratasy ihany anie
+        No ataovy sesilany
+        F’izaho aty manina
+        ka mitomany
+        
+        Iny soratanako iny anie
+        ataovy ao am-tratranao
+        fa iny no solotenako
+        hamangy anao`,
         "isFavorite": false,
         "upvote": 100,
         "downvote": 15
