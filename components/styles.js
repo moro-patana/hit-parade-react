@@ -11,8 +11,8 @@ function Styles() {
 
      return (
       <div className="style">
-          {songFilter.map(song => (
-            <Link to="/">🎧{song}</Link>
+          {songFilter.map((song, index) => (
+            <Link key={index} to={`/styles/${song}`}>🎧{song}</Link>
           ))}
       </div>
     )
