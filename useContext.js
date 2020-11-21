@@ -5,8 +5,16 @@ function ContextProvider(props) {
     const [songs, setSongs] = useState([])
     const [cartItem, setCartItem] = useState([])
 
+    function handleSongs() {
+    const lsSongs = JSON.parse(localStorage.getItem("songs"));
+     if(lsSongs) {
+         setSongs(SongsData)
+     }
+    }
     useEffect(() => {
         setSongs(SongsData)
+        handleSongs()
+        initCartItem()
     }, [])
     function toggleFavorite(id) {
         const favoritedSongs = songs.map(song => {
@@ -59,6 +67,22 @@ function ContextProvider(props) {
     function emptyCart() {
         setCartItem([])
     }
+
+    function initCartItem() {
+        const lscartItem = JSON.parse(localStorage.getItem("cartItem"))
+        if(lscartItem) {
+            setCartItem(lscartItem)
+        }
+    }
+
+    useEffect(() => {
+        localStorage.setItem("songs", JSON.stringify(songs))
+    }, [songs])
+
+    useEffect(() => {
+            localStorage.setItem("cartItem", JSON.stringify(cartItem))
+    }, [cartItem])
+
     return (
         <Contexts.Provider 
         value={{ 

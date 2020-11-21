@@ -29874,8 +29874,18 @@ function ContextProvider(props) {
       cartItem = _useState4[0],
       setCartItem = _useState4[1];
 
+  function handleSongs() {
+    var lsSongs = JSON.parse(localStorage.getItem("songs"));
+
+    if (lsSongs) {
+      setSongs(_songsData.default);
+    }
+  }
+
   (0, _react.useEffect)(function () {
     setSongs(_songsData.default);
+    handleSongs();
+    initCartItem();
   }, []);
 
   function toggleFavorite(id) {
@@ -29940,6 +29950,20 @@ function ContextProvider(props) {
     setCartItem([]);
   }
 
+  function initCartItem() {
+    var lscartItem = JSON.parse(localStorage.getItem("cartItem"));
+
+    if (lscartItem) {
+      setCartItem(lscartItem);
+    }
+  }
+
+  (0, _react.useEffect)(function () {
+    localStorage.setItem("songs", JSON.stringify(songs));
+  }, [songs]);
+  (0, _react.useEffect)(function () {
+    localStorage.setItem("cartItem", JSON.stringify(cartItem));
+  }, [cartItem]);
   return /*#__PURE__*/_react.default.createElement(Contexts.Provider, {
     value: {
       songs: songs,
