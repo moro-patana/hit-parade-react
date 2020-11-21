@@ -34271,7 +34271,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function Cart() {
   var _useContext = (0, _react.useContext)(_useContext2.Contexts),
-      cartItem = _useContext.cartItem;
+      cartItem = _useContext.cartItem,
+      emptyCart = _useContext.emptyCart;
 
   var _useState = (0, _react.useState)("Buy"),
       _useState2 = _slicedToArray(_useState, 2),

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react"
 import { Contexts } from "../useContext";
 function Cart() {
-    const { cartItem } = useContext(Contexts)
+    const { cartItem, emptyCart } = useContext(Contexts)
 	const [buyBtnText, setBuyBtnText] = useState("Buy")
 	// const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
     // const calculateTotal = () => {
