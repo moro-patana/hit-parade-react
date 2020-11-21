@@ -6,6 +6,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 2rem;
+}
+#root header p {
+    margin: 0;
+    padding: 1rem;
 }
 a,
 .song-style {
