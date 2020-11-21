@@ -76,7 +76,7 @@ function ContextProvider(props) {
         const newSong = {
             title: input.title.value,
             artist: input.artist.value,
-            price: input.price.value,
+            price: Number(input.price.value),
             style: input.style.value,
             lyrics: input.lyrics.value,
             isfavorite: false,

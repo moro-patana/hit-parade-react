@@ -29958,7 +29958,7 @@ function ContextProvider(props) {
     var newSong = {
       title: input.title.value,
       artist: input.artist.value,
-      price: input.price.value,
+      price: Number(input.price.value),
       style: input.style.value,
       lyrics: input.lyrics.value,
       isfavorite: false,
@@ -34310,7 +34310,7 @@ function AddSong() {
     name: "artist",
     placeholder: "Artist"
   }), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
+    type: "number",
     name: "price",
     placeholder: "Price"
   }), /*#__PURE__*/_react.default.createElement("select", {

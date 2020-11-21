@@ -7,7 +7,7 @@ function AddSong() {
             <form onSubmit={handleSubmit}>
                 <input type="text" name="title" placeholder="Title" />
                 <input type="text" name="artist" placeholder="Artist" />
-                <input type="text" name="price" placeholder="Price" />
+                <input type="number" name="price" placeholder="Price" />
                 <select name="style" id="pet-select">
                     <option value="">Styles</option>
                     <option value="slow">Slow</option>
