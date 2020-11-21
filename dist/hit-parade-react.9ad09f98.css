@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 1rem;
+    background-color: #b8c1ec;
 }
 #root header{
     display: flex;
