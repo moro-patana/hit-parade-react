@@ -115,3 +115,10 @@ label {
 .style a {
     padding: 1rem;
 }
+.filter-style {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    width: 300px;
+    margin-bottom: 1rem;
+}
