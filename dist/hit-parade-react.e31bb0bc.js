@@ -34374,7 +34374,9 @@ function SongStyleItem() {
     return song.style === cartStyle;
   });
   console.log(filterSongs);
-  return /*#__PURE__*/_react.default.createElement("div", null, filterSongs.map(function (song) {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
+    className: "song-style"
+  }, "\uD83C\uDFA7", cartStyle), filterSongs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: song.id,
       className: "filter-style"

@@ -11,6 +11,9 @@ function SongStyleItem() {
 
     return (
       <div>
+          <p className="song-style">
+              🎧{cartStyle}
+          </p>
          {filterSongs.map(song => (
              <div key={song.id} className="filter-style" >
                  <h3>{song.title}</h3>
