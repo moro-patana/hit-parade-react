@@ -2,13 +2,17 @@ import React, { useContext } from "react"
 import { Contexts } from "../useContext"
 function Styles() {
     const {songs} = useContext(Contexts)
-    const filterStyles = songs.filter(song => song.style)
-    console.log(filterStyles);
-    return (
+
+    const song = songs.map(song => song.style)
+    console.log(song);
+    const songFilter = [...new Set(song)]
+    console.log(songFilter);
+
+     return (
       <div>
           <ul>
-          {filterStyles.map(song => (
-            <li key={song.id}>🎧{song.style}</li>
+          {songFilter.map((song, index) => (
+            <li key={index}>🎧{song}</li>
           ))}
           </ul>
       </div>
