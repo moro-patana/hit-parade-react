@@ -8,6 +8,8 @@ function ContextProvider(props) {
     function handleSongs() {
     const lsSongs = JSON.parse(localStorage.getItem("songs"));
      if(lsSongs) {
+         setSongs(lsSongs)
+     } else {
          setSongs(SongsData)
      }
     }
