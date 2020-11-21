@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react"
 import { Contexts } from "../useContext";
 function Cart() {
-    const { cartItem, emptyCart } = useContext(Contexts)
+    const { cartItem, emptyCart, deleteItem } = useContext(Contexts)
 	const [buyBtnText, setBuyBtnText] = useState("Buy")
 	// const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
         const totalItemCount = cartItem.reduce((total, item) => {
@@ -24,7 +24,7 @@ function Cart() {
         <div>
         {cartItem.map(item => (
         <div className="song-list"  key={item.id}>
-            <i className="ri-delete-bin-line"></i>
+            <i className="ri-delete-bin-line" onClick={() => deleteItem(item.id)}></i>
             <div className="song">
               <h3>{item.title}</h3>
               <span>{item.artist}</span>

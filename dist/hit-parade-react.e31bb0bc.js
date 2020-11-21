@@ -34296,7 +34296,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function Cart() {
   var _useContext = (0, _react.useContext)(_useContext2.Contexts),
       cartItem = _useContext.cartItem,
-      emptyCart = _useContext.emptyCart;
+      emptyCart = _useContext.emptyCart,
+      deleteItem = _useContext.deleteItem;
 
   var _useState = (0, _react.useState)("Buy"),
       _useState2 = _slicedToArray(_useState, 2),
@@ -34323,7 +34324,10 @@ function Cart() {
       className: "song-list",
       key: item.id
     }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "ri-delete-bin-line"
+      className: "ri-delete-bin-line",
+      onClick: function onClick() {
+        return deleteItem(item.id);
+      }
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "song"
     }, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("span", null, item.artist)), /*#__PURE__*/_react.default.createElement("p", {
