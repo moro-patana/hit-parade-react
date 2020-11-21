@@ -11,6 +11,7 @@ body {
 .menu {
     margin: 0;
     padding: 1rem;
+    font-size: 25px;
 }
 .menu:hover {
     font-weight: bold;
