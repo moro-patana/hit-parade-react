@@ -34059,13 +34059,21 @@ function Header() {
 
   return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "\uD83D\uDD25Popular songs")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "menu"
+  }, "\uD83D\uDD25Popular songs")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/styles"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "\uD83D\uDC96Styles")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "menu"
+  }, "\uD83D\uDC96Styles")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/addsong"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "\uD83D\uDE00Add")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "menu"
+  }, "\uD83D\uDE00Add")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/cart"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "\uD83D\uDED2Cart")));
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "menu"
+  }, "\uD83D\uDED2Cart")));
 }
 
 var _default = Header;

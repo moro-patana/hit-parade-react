@@ -7,17 +7,17 @@ function Header() {
     return (
       <header>
           <Link to="/">
-              <p>🔥Popular songs</p>
+              <p className="menu">🔥Popular songs</p>
           </Link>
 
           <Link to="/styles">
-             <p>💖Styles</p>
+             <p className="menu">💖Styles</p>
           </Link>
            <Link to="/addsong">
-              <p>😀Add</p>
+              <p className="menu">😀Add</p>
           </Link>
           <Link to="/cart">
-              <p>🛒Cart</p>
+              <p className="menu">🛒Cart</p>
           </Link>
       </header>
     )
