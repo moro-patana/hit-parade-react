@@ -1,25 +1,7 @@
 import React, { useContext } from "react"
 import { Contexts } from "../useContext";
 function AddSong() {
-    const { songs, setSongs } = useContext(Contexts)
-    function handleSubmit(e) {
-        e.preventDefault();
-        const input = e.target
-        const newSong = {
-            title: input.title.value,
-            artist: input.artist.value,
-            price: input.price.value,
-            style: input.style.value,
-            lyrics: input.lyrics.value,
-            isfavorite: "false",
-            upvote: 0,
-            downvote: 0,
-            id: Date.now()
-        }
-        songs.push(newSong)
-        setSongs([...songs])
-        e.target.reset()
-    }
+    const { handleSubmit } = useContext(Contexts)
     return (
         <div className="add-new-song">
             <form onSubmit={handleSubmit}>
