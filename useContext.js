@@ -55,9 +55,11 @@ function ContextProvider(props) {
  }
  function deleteItem(songId) {
     setCartItem(prevItems => prevItems.filter(cartItem => cartItem.id !== songId))}
-
+    function emptyCart() {
+        setCartItem([])
+    }
     return (
-      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote, toggleFavorite, addToCart, deleteItem, cartItem}}>
+      <Contexts.Provider value={{songs, toggleUpvote, toggleDownvote, toggleFavorite, addToCart, deleteItem, cartItem, emptyCart}}>
           {props.children}
       </Contexts.Provider>
     )
