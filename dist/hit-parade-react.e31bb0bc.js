@@ -34497,8 +34497,9 @@ function Lyrics() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "lyrics-page"
   }, filterSongs.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
-      key: song.id,
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: song.id
+    }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
       className: "lyrics-paragraph"
     }, song.lyrics));
   }));
