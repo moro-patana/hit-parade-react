@@ -4,10 +4,9 @@ function Cart() {
     const { cartItem, emptyCart } = useContext(Contexts)
 	const [buyBtnText, setBuyBtnText] = useState("Buy")
 	// const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
-    // const calculateTotal = () => {
-    //     const totalItemCount = cartItem.reduce((total, item) => {
-    //         return total + item.price;
-    //     }, 0);
+        const totalItemCount = cartItem.reduce((total, item) => {
+            return total = total + item.price;
+        }, 0);
     
     //     setTotalItemCount(totalItemCount);
     // }
@@ -33,7 +32,7 @@ function Cart() {
             <p className="price">{item.price}</p>
         </div>
         ))}
-        <p className="totalPrice">Total:</p>
+        <p className="totalPrice">Total: {totalItemCount} Ar</p>
         {cartItem.length > 0 
 				? <button className="buy" onClick={buy}>{buyBtnText}</button>
 				: <p>You have no item in your cart</p>

@@ -29777,7 +29777,7 @@ module.exports = [{
   "id": 1605790043411,
   "title": "If I let you go",
   "artist": "Westlife",
-  "price": "1000 Ar",
+  "price": 1000,
   "style": "Slow",
   "lyrics": "",
   "isFavorite": false,
@@ -29787,7 +29787,7 @@ module.exports = [{
   "id": 1605790071018,
   "title": "Power of love",
   "artist": "Celine Dion",
-  "price": "2000 Ar",
+  "price": 2000,
   "style": "Slow",
   "lyrics": "",
   "isFavorite": false,
@@ -29797,7 +29797,7 @@ module.exports = [{
   "id": 1605790140520,
   "title": "Couleranao Coulerako",
   "artist": "Dadi Love",
-  "price": "5000Ar",
+  "price": 5000,
   "style": "Kawitry",
   "lyrics": "",
   "isFavorite": false,
@@ -29807,7 +29807,7 @@ module.exports = [{
   "id": 1605790106952,
   "title": "Miverena aty ANtsihanaka",
   "artist": "Novah Dakoto",
-  "price": "3000Ar",
+  "price": 3000,
   "style": "country",
   "lyrics": "",
   "isFavorite": false,
@@ -34278,13 +34278,12 @@ function Cart() {
       _useState2 = _slicedToArray(_useState, 2),
       buyBtnText = _useState2[0],
       setBuyBtnText = _useState2[1]; // const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
-  // const calculateTotal = () => {
-  //     const totalItemCount = cartItem.reduce((total, item) => {
-  //         return total + item.price;
-  //     }, 0);
-  //     setTotalItemCount(totalItemCount);
-  // }
 
+
+  var totalItemCount = cartItem.reduce(function (total, item) {
+    return total = total + item.price;
+  }, 0); //     setTotalItemCount(totalItemCount);
+  // }
 
   function buy() {
     setBuyBtnText("ordering...");
@@ -34308,7 +34307,7 @@ function Cart() {
     }, item.price));
   }), /*#__PURE__*/_react.default.createElement("p", {
     className: "totalPrice"
-  }, "Total:"), cartItem.length > 0 ? /*#__PURE__*/_react.default.createElement("button", {
+  }, "Total: ", totalItemCount, " Ar"), cartItem.length > 0 ? /*#__PURE__*/_react.default.createElement("button", {
     className: "buy",
     onClick: buy
   }, buyBtnText) : /*#__PURE__*/_react.default.createElement("p", null, "You have no item in your cart")));
