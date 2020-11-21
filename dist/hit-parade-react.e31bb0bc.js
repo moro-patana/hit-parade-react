@@ -34457,7 +34457,9 @@ function SongStyleItem() {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: song.id,
       className: "filter-style"
-    }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist));
+    }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      to: "/lyrics/".concat(song.id)
+    }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("span", null, song.artist)));
   }));
 }
 

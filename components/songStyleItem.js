@@ -16,8 +16,10 @@ function SongStyleItem() {
           </p>
          {filterSongs.map(song => (
              <div key={song.id} className="filter-style" >
-                 <h3>{song.title}</h3>
-                 <span>{song.artist}</span>
+                 <Link to={`/lyrics/${song.id}`}>
+                     <h3>{song.title}</h3>
+                     <span>{song.artist}</span>
+                 </Link>
              </div>
          ))}
       </div>
