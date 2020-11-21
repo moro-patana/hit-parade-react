@@ -68,6 +68,25 @@ function ContextProvider(props) {
         setCartItem([])
     }
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        const input = e.target
+        const newSong = {
+            title: input.title.value,
+            artist: input.artist.value,
+            price: input.price.value,
+            style: input.style.value,
+            lyrics: input.lyrics.value,
+            isfavorite: "false",
+            upvote: 0,
+            downvote: 0,
+            id: Date.now()
+        }
+        songs.push(newSong)
+        setSongs([...songs])
+        e.target.reset()
+    }
+
     function initCartItem() {
         const lscartItem = JSON.parse(localStorage.getItem("cartItem"))
         if(lscartItem) {
@@ -94,7 +113,8 @@ function ContextProvider(props) {
             addToCart, 
             deleteItem, 
             cartItem, 
-            emptyCart 
+            emptyCart,
+            handleSubmit 
             }}>
             {props.children}
         </Contexts.Provider>
