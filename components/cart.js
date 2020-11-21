@@ -1,7 +1,25 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import { Contexts } from "../useContext";
 function Cart() {
     const { cartItem } = useContext(Contexts)
+	const [buyBtnText, setBuyBtnText] = useState("Buy")
+	// const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
+    // const calculateTotal = () => {
+    //     const totalItemCount = cartItem.reduce((total, item) => {
+    //         return total + item.price;
+    //     }, 0);
+    
+    //     setTotalItemCount(totalItemCount);
+    // }
+    function buy() {
+		setBuyBtnText("ordering...")
+            setTimeout(() => {
+                console.log("order placed");
+				emptyCart()
+				setBuyBtnText("Buy")
+            }, 3000)    
+        }
+
     return (
         <>
         <div>
@@ -16,7 +34,10 @@ function Cart() {
         </div>
         ))}
         <p className="totalPrice">Total:</p>
-        <button className="buy">Buy</button>
+        {cartItem.length > 0 
+				? <button className="buy" onClick={buy}>{buyBtnText}</button>
+				: <p>You have no item in your cart</p>
+			}
     </div>
 
 </>
