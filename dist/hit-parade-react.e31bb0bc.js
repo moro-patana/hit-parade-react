@@ -34178,7 +34178,9 @@ function Styles() {
   });
   console.log(filterStyles);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("ul", null, filterStyles.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("li", null, "\uD83C\uDFA7", song.style);
+    return /*#__PURE__*/_react.default.createElement("li", {
+      key: song.id
+    }, "\uD83C\uDFA7", song.style);
   })));
 }
 

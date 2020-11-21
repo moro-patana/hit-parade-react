@@ -8,7 +8,7 @@ function Styles() {
       <div>
           <ul>
           {filterStyles.map(song => (
-            <li>🎧{song.style}</li>
+            <li key={song.id}>🎧{song.style}</li>
           ))}
           </ul>
       </div>
