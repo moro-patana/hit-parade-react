@@ -111,7 +111,8 @@ label {
 }
 .totalPrice {
     text-align: end;
-    font-size: 20px;
+    color: darkblue;
+    font-size: 25px;
     margin: 0;
     padding: 1rem;
 }
