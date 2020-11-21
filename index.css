@@ -3,6 +3,12 @@ body {
     padding: 1rem;
     background-color: #b8c1ec;
 }
+h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 48px;
+}
 #root header{
     display: flex;
     flex-direction: row;
@@ -124,7 +130,7 @@ label {
     color: crimson;
 }
 .buy {
-    background-color: orange;
+    background-color: #fffffe;
     text-transform: uppercase;
 }
 .style {
