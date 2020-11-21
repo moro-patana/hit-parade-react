@@ -79,7 +79,7 @@ function ContextProvider(props) {
             price: input.price.value,
             style: input.style.value,
             lyrics: input.lyrics.value,
-            isfavorite: "false",
+            isfavorite: false,
             upvote: 0,
             downvote: 0,
             id: Date.now()
