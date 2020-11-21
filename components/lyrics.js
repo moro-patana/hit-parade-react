@@ -9,8 +9,12 @@ function Lyrics() {
 
     return (
         <div className="lyrics-page">
-            <h3>Lyrics</h3>
-            {filterSongs.map(song => (<p key={song.id} className="lyrics-paragraph">{song.lyrics}</p>))}
+            {filterSongs.map(song => (
+            <div>
+                <h3>{song.title}</h3>
+                <p key={song.id} className="lyrics-paragraph">{song.lyrics}</p>
+            </div>
+            ))}
         </div>
     )
 }

@@ -34496,11 +34496,11 @@ function Lyrics() {
   console.log(filterSongs);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "lyrics-page"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Lyrics"), filterSongs.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("p", {
+  }, filterSongs.map(function (song) {
+    return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
       key: song.id,
       className: "lyrics-paragraph"
-    }, song.lyrics);
+    }, song.lyrics));
   }));
 }
 
