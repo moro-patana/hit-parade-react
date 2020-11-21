@@ -29808,7 +29808,7 @@ module.exports = [{
   "title": "Miverena aty ANtsihanaka",
   "artist": "Novah Dakoto",
   "price": 3000,
-  "style": "country",
+  "style": "Country",
   "lyrics": "Efa ela loatra izay\n        No nandehananao nandao\n        ity toerana izay niarahana\n        Indrisy anefa tsy nisy azoko natao\n        fa dia ny mirary ny hiverenanao\n        \n        Izay rehetra mahita ahy\n        dia mandatsa avokoa\n        Tsy kivy anefa aho\n        fa manana anao\n        \n        Mba miverena aty Antsihanaka aty e\n        Raha henonao izao antsoko izao\n        Mba miverena aty Antsihanaka aty e\n        Havanao ity nilaozanao ity\n        \n        Na lavitra aza ianao\n        aza adino ny efa vita\n        aza adino hoy aho\n        na dia iray minitra\n        \n        Ny taratasy ihany anie\n        No ataovy sesilany\n        F\u2019izaho aty manina\n        ka mitomany\n        \n        Iny soratanako iny anie\n        ataovy ao am-tratranao\n        fa iny no solotenako\n        hamangy anao",
   "isFavorite": false,
   "upvote": 100,
