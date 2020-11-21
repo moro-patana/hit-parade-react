@@ -49,7 +49,9 @@ function ContextProvider(props) {
         setSongs(downVoteUpdate)
      }
  function addToCart(song) {
+     console.log(song);
      setCartItem(prevItems => [...prevItems, song])
+     console.log(cartItem);
  }
  function deleteItem(songId) {
     setCartItem(prevItems => prevItems.filter(cartItem => cartItem.id !== songId))}
