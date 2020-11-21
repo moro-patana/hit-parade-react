@@ -29779,7 +29779,7 @@ module.exports = [{
   "artist": "Westlife",
   "price": 1000,
   "style": "Slow",
-  "lyrics": "",
+  "lyrics": "Day after day\n        Time pass away\n        And I just can't get you off my mind\n        Nobody knows\n        I hide it inside\n        I keep on searching, but I can't find\n        The courage to show to letting you know\n        I've never felt so much love before\n        And once again I'm thinking about\n        Taking the easy way out\n        But if I let you go, I will never know\n        What my life would be holding you close to me\n        Will I ever see you smiling back at me?\n        (Oh yeah) how will I know if I let you go?\n        Night after night I hear my self say\n        Why can't this feeling just fade away?\n        There's no one like you, you speak to my heart\n        It's such a shame we're worlds apart\n        I'm too shy to ask, I'm to proud to lose\n        But sooner or later I've got to choose\n        And once again I'm thinking about\n        Taking the easy way out\n        But if I let you go I will never know\u2026",
   "isFavorite": false,
   "upvote": 10,
   "downvote": 1
@@ -29789,17 +29789,17 @@ module.exports = [{
   "artist": "Celine Dion",
   "price": 2000,
   "style": "Slow",
-  "lyrics": "",
+  "lyrics": "The whispers in the morning\n        Of lovers sleeping tight\n        Are rolling by like thunder now\n        As I look in your eyes\n        I hold on to your body\n        And feel each move you make\n        Your voice is warm and tender\n        A love that I could not forsake\n        'Cause I'm your lady\n        And you are my man\n        Whenever you reach for me\n        I'll do all that I can\n        Lost is how I'm feeling lying in your arms\n        When the world outside's too much to take\n        That all ends when I'm with you\n        Even though there may be times\n        It seems I'm far away\n        Never wonder where I am\n        'Cause I am always by your side\n        'Cause I'm your lady\n        And you are my man\n        Whenever you reach for me\n        I'll do all that I can\n        We're heading for something\n        Somewhere I've never been\n        Sometimes I am frightened\n        But I'm ready to learn\n        Of the power of love\n        The sound of your heart\u2026",
   "isFavorite": false,
   "upvote": 30,
   "downvote": 0
 }, {
   "id": 1605790140520,
-  "title": "Couleranao Coulerako",
-  "artist": "Dadi Love",
+  "title": "Gone Crazy",
+  "artist": "Alan Jackson",
   "price": 5000,
-  "style": "Kawitry",
-  "lyrics": "",
+  "style": "Country",
+  "lyrics": "Here I am all alone again tonight\n        In this old empty house\n        It's hard to learn what you don't think you need\n        You can't live without\n        Never leave the sound of the telephone\n        But ever since you left\n        I've been gone\n        Gone crazy, goin' out of my mind\n        I've asked myself the reason,\n        At least a thousand times\n        Goin' up and down this hallway\n        Tryin' to leave the pain behind\n        Ever since you left,\n        I've been gone\n        I never saw your face this many times\n        When you were really here\n        The things you said I never understood\n        Are now crystal clear\n        I never spent this much time at home\n        But ever since you left,\n        I've been gone\n        Gone crazy, goin' out of my mind\n        I've asked myself the reason,\n        At least a thousand times\n        Goin' up and down this hallway\n        Tryin' to leave the pain\u2026",
   "isFavorite": false,
   "upvote": 90,
   "downvote": 20
@@ -29809,7 +29809,7 @@ module.exports = [{
   "artist": "Novah Dakoto",
   "price": 3000,
   "style": "country",
-  "lyrics": "",
+  "lyrics": "Efa ela loatra izay\n        No nandehananao nandao\n        ity toerana izay niarahana\n        Indrisy anefa tsy nisy azoko natao\n        fa dia ny mirary ny hiverenanao\n        \n        Izay rehetra mahita ahy\n        dia mandatsa avokoa\n        Tsy kivy anefa aho\n        fa manana anao\n        \n        Mba miverena aty Antsihanaka aty e\n        Raha henonao izao antsoko izao\n        Mba miverena aty Antsihanaka aty e\n        Havanao ity nilaozanao ity\n        \n        Na lavitra aza ianao\n        aza adino ny efa vita\n        aza adino hoy aho\n        na dia iray minitra\n        \n        Ny taratasy ihany anie\n        No ataovy sesilany\n        F\u2019izaho aty manina\n        ka mitomany\n        \n        Iny soratanako iny anie\n        ataovy ao am-tratranao\n        fa iny no solotenako\n        hamangy anao",
   "isFavorite": false,
   "upvote": 100,
   "downvote": 15
@@ -29943,6 +29943,7 @@ function ContextProvider(props) {
   return /*#__PURE__*/_react.default.createElement(Contexts.Provider, {
     value: {
       songs: songs,
+      setSongs: setSongs,
       toggleUpvote: toggleUpvote,
       toggleDownvote: toggleDownvote,
       toggleFavorite: toggleFavorite,
@@ -34069,7 +34070,9 @@ function Header() {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../useContext":"useContext.js"}],"components/songItem.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../useContext":"useContext.js"}],"img/more.svg":[function(require,module,exports) {
+module.exports = "/more.a0f9b6fe.svg";
+},{}],"components/songItem.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34080,6 +34083,12 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _useContext2 = require("../useContext");
+
+var _reactRouterDom = require("react-router-dom");
+
+var _more = _interopRequireDefault(require("../img/more.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -34151,14 +34160,16 @@ function SongItem(_ref) {
     className: "cart"
   }, cartIcon()), /*#__PURE__*/_react.default.createElement("div", {
     className: "lyrics"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "ri-more-line"
-  }))));
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/lyrics/".concat(song.id)
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _more.default
+  })))));
 }
 
 var _default = SongItem;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../useContext":"useContext.js"}],"components/styles.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../useContext":"useContext.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../img/more.svg":"img/more.svg"}],"components/styles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34220,14 +34231,55 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _useContext2 = require("../useContext");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 function AddSong() {
+  var _useContext = (0, _react.useContext)(_useContext2.Contexts),
+      songs = _useContext.songs,
+      setSongs = _useContext.setSongs;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    var input = e.target;
+    var newSong = {
+      title: input.title.value,
+      artist: input.artist.value,
+      price: input.price.value,
+      style: input.style.value,
+      lyrics: input.lyrics.value,
+      isfavorite: "false",
+      upvote: 0,
+      downvote: 0,
+      id: Date.now()
+    };
+    songs.push(newSong);
+    setSongs(_toConsumableArray(songs));
+    e.target.reset();
+  }
+
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "add-new-song"
-  }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement("form", {
+    onSubmit: handleSubmit
+  }, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     name: "title",
     placeholder: "Title"
@@ -34240,7 +34292,7 @@ function AddSong() {
     name: "price",
     placeholder: "Price"
   }), /*#__PURE__*/_react.default.createElement("select", {
-    name: "pets",
+    name: "style",
     id: "pet-select"
   }, /*#__PURE__*/_react.default.createElement("option", {
     value: ""
@@ -34258,14 +34310,17 @@ function AddSong() {
     value: "rock"
   }, "Rock"), /*#__PURE__*/_react.default.createElement("option", {
     value: "rap"
-  }, "Rap")), /*#__PURE__*/_react.default.createElement("label", null, "Lyrics"), /*#__PURE__*/_react.default.createElement("textarea", null), /*#__PURE__*/_react.default.createElement("button", {
+  }, "Rap")), /*#__PURE__*/_react.default.createElement("label", null, "Lyrics"), /*#__PURE__*/_react.default.createElement("textarea", {
+    name: "lyrics"
+  }), /*#__PURE__*/_react.default.createElement("button", {
+    type: "submit",
     className: "add"
   }, "Add")));
 }
 
 var _default = AddSong;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/cart.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../useContext":"useContext.js"}],"components/cart.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34386,7 +34441,48 @@ function SongStyleItem() {
 
 var _default = SongStyleItem;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../useContext":"useContext.js"}],"App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../useContext":"useContext.js"}],"components/lyrics.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _useContext2 = require("../useContext");
+
+var _reactRouterDom = require("react-router-dom");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function Lyrics() {
+  var _useContext = (0, _react.useContext)(_useContext2.Contexts),
+      songs = _useContext.songs;
+
+  var _useParams = (0, _reactRouterDom.useParams)(),
+      songId = _useParams.songId;
+
+  var filterSongs = songs.filter(function (song) {
+    return song.id === Number(songId);
+  });
+  console.log(filterSongs);
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "lyrics-page"
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "Lyrics"), filterSongs.map(function (song) {
+    return /*#__PURE__*/_react.default.createElement("p", {
+      key: song.id,
+      className: "lyrics-paragraph"
+    }, song.lyrics);
+  }));
+}
+
+var _default = Lyrics;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../useContext":"useContext.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34411,6 +34507,8 @@ var _addSong = _interopRequireDefault(require("./components/addSong"));
 var _cart = _interopRequireDefault(require("./components/cart"));
 
 var _songStyleItem = _interopRequireDefault(require("./components/songStyleItem"));
+
+var _lyrics = _interopRequireDefault(require("./components/lyrics"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34446,13 +34544,13 @@ function App() {
     exact: true,
     path: "/cart"
   }, /*#__PURE__*/_react.default.createElement(_cart.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/cart/:cartId"
-  })));
+    path: "/lyrics/:songId"
+  }, /*#__PURE__*/_react.default.createElement(_lyrics.default, null))));
 }
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./useContext":"useContext.js","./components/Header":"components/Header.js","./components/songItem":"components/songItem.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./components/styles":"components/styles.js","./components/addSong":"components/addSong.js","./components/cart":"components/cart.js","./components/songStyleItem":"components/songStyleItem.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./useContext":"useContext.js","./components/Header":"components/Header.js","./components/songItem":"components/songItem.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./components/styles":"components/styles.js","./components/addSong":"components/addSong.js","./components/cart":"components/cart.js","./components/songStyleItem":"components/songStyleItem.js","./components/lyrics":"components/lyrics.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -34496,7 +34594,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49902" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52913" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
