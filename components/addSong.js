@@ -3,9 +3,9 @@ function AddSong() {
     return (
         <div className="add-new-song">
             <form>
-                <input type="text" placeholder="Title"/>
-                <input type="text" placeholder="Artist"/>
-                <input type="text" placeholder="Price"/>
+                <input type="text" name="title" placeholder="Title"/>
+                <input type="text" name="artist" placeholder="Artist"/>
+                <input type="text" name="price" placeholder="Price"/>
                 <select name="pets" id="pet-select">
                     <option value="">Styles</option>
                     <option value="slow">Slow</option>

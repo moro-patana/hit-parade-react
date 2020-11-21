@@ -34208,12 +34208,15 @@ function AddSong() {
     className: "add-new-song"
   }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
+    name: "title",
     placeholder: "Title"
   }), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
+    name: "artist",
     placeholder: "Artist"
   }), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
+    name: "price",
     placeholder: "Price"
   }), /*#__PURE__*/_react.default.createElement("select", {
     name: "pets",
