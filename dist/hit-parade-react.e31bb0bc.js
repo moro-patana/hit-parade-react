@@ -34379,13 +34379,11 @@ function Cart() {
   var _useState = (0, _react.useState)("Buy"),
       _useState2 = _slicedToArray(_useState, 2),
       buyBtnText = _useState2[0],
-      setBuyBtnText = _useState2[1]; // const displayTotalPrice = totalPrice.toLocaleString("en-US", {style: "currency", currency: "USD"})
-
+      setBuyBtnText = _useState2[1];
 
   var totalItemCount = cartItem.reduce(function (total, item) {
     return total = total + item.price;
-  }, 0); //     setTotalItemCount(totalItemCount);
-  // }
+  }, 0);
 
   function buy() {
     setBuyBtnText("ordering...");
@@ -34415,7 +34413,9 @@ function Cart() {
   }, "Total: ", totalItemCount, " Ar"), cartItem.length > 0 ? /*#__PURE__*/_react.default.createElement("button", {
     className: "buy",
     onClick: buy
-  }, buyBtnText) : /*#__PURE__*/_react.default.createElement("p", null, "You have no item in your cart")));
+  }, buyBtnText) : /*#__PURE__*/_react.default.createElement("p", {
+    className: "empty-cart"
+  }, "You have no item in your cart")));
 }
 
 var _default = Cart;
