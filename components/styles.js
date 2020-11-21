@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { Contexts } from "../useContext"
+import { Link } from "react-router-dom"
 function Styles() {
     const {songs} = useContext(Contexts)
 
@@ -9,12 +10,10 @@ function Styles() {
     console.log(songFilter);
 
      return (
-      <div>
-          <ul>
-          {songFilter.map((song, index) => (
-            <li key={index}>🎧{song}</li>
+      <div className="style">
+          {songFilter.map(song => (
+            <Link to="/">🎧{song}</Link>
           ))}
-          </ul>
       </div>
     )
 }

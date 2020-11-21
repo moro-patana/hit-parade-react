@@ -34170,6 +34170,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _useContext2 = require("../useContext");
 
+var _reactRouterDom = require("react-router-dom");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -34198,16 +34200,18 @@ function Styles() {
   var songFilter = _toConsumableArray(new Set(song));
 
   console.log(songFilter);
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("ul", null, songFilter.map(function (song, index) {
-    return /*#__PURE__*/_react.default.createElement("li", {
-      key: index
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "style"
+  }, songFilter.map(function (song) {
+    return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      to: "/"
     }, "\uD83C\uDFA7", song);
-  })));
+  }));
 }
 
 var _default = Styles;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../useContext":"useContext.js"}],"components/addSong.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../useContext":"useContext.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"components/addSong.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
