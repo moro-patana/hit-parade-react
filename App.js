@@ -7,12 +7,13 @@ import Styles from "./components/styles"
 import AddSong from "./components/addSong"
 import Cart from "./components/cart"
 function App() {
+    const { songs } = useContext(Contexts)
     return (
         <div>
         <Header/>
         <Switch>
             <Route exact path="/">
-              <SongItem/>
+            {songs.map(song => ( <SongItem key={song.id} song={song}/> ))}
             </Route>
             <Route path="/styles">
                 <Styles/>
