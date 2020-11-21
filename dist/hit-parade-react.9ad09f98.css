@@ -147,6 +147,10 @@ label {
     width: 300px;
     margin-bottom: 1rem;
 }
+.filter-style a {
+    text-decoration: none;
+    color: white;
+}
 .lyrics-page {
     background-color: black;
     padding: 2rem;
