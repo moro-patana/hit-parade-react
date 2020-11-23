@@ -34490,19 +34490,16 @@ function Lyrics() {
   var _useParams = (0, _reactRouterDom.useParams)(),
       songId = _useParams.songId;
 
-  var filterSongs = songs.filter(function (song) {
+  var song = songs.find(function (song) {
     return song.id === Number(songId);
   });
-  console.log(filterSongs);
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\uD83C\uDFB6 Lyrics"), /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, song === null || song === void 0 ? void 0 : song.title, ": ", song === null || song === void 0 ? void 0 : song.artist), /*#__PURE__*/_react.default.createElement("div", {
     className: "lyrics-page"
-  }, filterSongs.map(function (song) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: song.id
-    }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
-      className: "lyrics-paragraph"
-    }, song.lyrics), /*#__PURE__*/_react.default.createElement("small", null, "Artist: ", song.artist));
-  })));
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    key: song === null || song === void 0 ? void 0 : song.id
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83C\uDFB6 Lyrics"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "lyrics-paragraph"
+  }, song === null || song === void 0 ? void 0 : song.lyrics))));
 }
 
 var _default = Lyrics;

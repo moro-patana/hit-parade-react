@@ -4,20 +4,16 @@ import { useParams } from "react-router-dom"
 function Lyrics() {
     const { songs } = useContext(Contexts)
     const { songId } = useParams()
-    const filterSongs = songs.filter(song => song.id === Number(songId))
-    console.log(filterSongs);
+    const song = songs.find(song => song.id === Number(songId))
 
     return (
         <>
-        <h2>🎶 Lyrics</h2>
+        <h2>{song?.title}: {song?.artist}</h2>
         <div className="lyrics-page">
-            {filterSongs.map(song => (
-            <div key={song.id} >
-                <h3>{song.title}</h3>
-                <p className="lyrics-paragraph">{song.lyrics}</p>
-                <small>Artist: {song.artist}</small>
+            <div key={song?.id} >
+                <h3>🎶 Lyrics</h3>
+                <p className="lyrics-paragraph">{song?.lyrics}</p>
             </div>
-            ))}
         </div>
         </>
     )
