@@ -34494,7 +34494,7 @@ function Lyrics() {
     return song.id === Number(songId);
   });
   console.log(filterSongs);
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h2", null, "\uD83C\uDFB6 Lyrics"), /*#__PURE__*/_react.default.createElement("div", {
     className: "lyrics-page"
   }, filterSongs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
@@ -34502,7 +34502,7 @@ function Lyrics() {
     }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
       className: "lyrics-paragraph"
     }, song.lyrics), /*#__PURE__*/_react.default.createElement("small", null, "Artist: ", song.artist));
-  }));
+  })));
 }
 
 var _default = Lyrics;

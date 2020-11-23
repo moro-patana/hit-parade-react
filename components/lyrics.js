@@ -8,6 +8,8 @@ function Lyrics() {
     console.log(filterSongs);
 
     return (
+        <>
+        <h2>🎶 Lyrics</h2>
         <div className="lyrics-page">
             {filterSongs.map(song => (
             <div key={song.id} >
@@ -17,6 +19,7 @@ function Lyrics() {
             </div>
             ))}
         </div>
+        </>
     )
 }
 export default Lyrics;
