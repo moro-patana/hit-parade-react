@@ -34501,7 +34501,7 @@ function Lyrics() {
       key: song.id
     }, /*#__PURE__*/_react.default.createElement("h3", null, song.title), /*#__PURE__*/_react.default.createElement("p", {
       className: "lyrics-paragraph"
-    }, song.lyrics));
+    }, song.lyrics), /*#__PURE__*/_react.default.createElement("small", null, "Artist: ", song.artist));
   }));
 }
 
@@ -34619,7 +34619,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52913" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59650" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

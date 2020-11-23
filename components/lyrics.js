@@ -13,6 +13,7 @@ function Lyrics() {
             <div key={song.id} >
                 <h3>{song.title}</h3>
                 <p className="lyrics-paragraph">{song.lyrics}</p>
+                <small>Artist: {song.artist}</small>
             </div>
             ))}
         </div>
