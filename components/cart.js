@@ -29,9 +29,11 @@ function Cart() {
             <p className="price">{item.price}</p>
         </div>
         ))}
-        <p className="totalPrice">Total: {totalItemCount} Ar</p>
-        {cartItem.length > 0 
-				? <button className="buy" onClick={buy}>{buyBtnText}</button>
+            {cartItem.length > 0 
+                ? <div>
+                    <p className="totalPrice">Total: {totalItemCount} Ar</p>
+    				<button className="buy" onClick={buy}>{buyBtnText}</button>
+                </div>
 				: <p className="empty-cart">You have no item in your cart</p>
 			}
     </div>

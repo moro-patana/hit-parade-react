@@ -34406,12 +34406,12 @@ function Cart() {
     }, /*#__PURE__*/_react.default.createElement("h3", null, item.title), /*#__PURE__*/_react.default.createElement("span", null, item.artist)), /*#__PURE__*/_react.default.createElement("p", {
       className: "price"
     }, item.price));
-  }), /*#__PURE__*/_react.default.createElement("p", {
+  }), cartItem.length > 0 ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
     className: "totalPrice"
-  }, "Total: ", totalItemCount, " Ar"), cartItem.length > 0 ? /*#__PURE__*/_react.default.createElement("button", {
+  }, "Total: ", totalItemCount, " Ar"), /*#__PURE__*/_react.default.createElement("button", {
     className: "buy",
     onClick: buy
-  }, buyBtnText) : /*#__PURE__*/_react.default.createElement("p", {
+  }, buyBtnText)) : /*#__PURE__*/_react.default.createElement("p", {
     className: "empty-cart"
   }, "You have no item in your cart")));
 }
