@@ -5,9 +5,7 @@ function Styles() {
     const {songs} = useContext(Contexts)
 
     const song = songs.map(song => song.style)
-    console.log(song);
     const songFilter = [...new Set(song)]
-    console.log(songFilter);
 
      return (
       <div className="style">

@@ -34260,11 +34260,9 @@ function Styles() {
   var song = songs.map(function (song) {
     return song.style;
   });
-  console.log(song);
 
   var songFilter = _toConsumableArray(new Set(song));
 
-  console.log(songFilter);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "style"
   }, songFilter.map(function (song, index) {
