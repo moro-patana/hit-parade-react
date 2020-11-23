@@ -36,7 +36,7 @@ a,
     background: #272343;
     border-radius: 5px;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     color: #ffff;
 }
 .song {
@@ -164,6 +164,12 @@ label {
 }
 small {
     padding-left: 60%;
+}
+@media (min-width:1114px) {
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
