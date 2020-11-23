@@ -34448,7 +34448,7 @@ function SongStyleItem() {
       songStyle = _useParams.songStyle;
 
   var filterSongs = songs.filter(function (song) {
-    return song.style === cartStyle;
+    return song.style === songStyle;
   });
   console.log(filterSongs);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {

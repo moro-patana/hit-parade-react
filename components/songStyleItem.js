@@ -6,7 +6,7 @@ function SongStyleItem() {
     const {songs} = useContext(Contexts)
     console.log(songs);
     const { songStyle } = useParams()
-    const filterSongs = songs.filter(song => song.style === cartStyle)
+    const filterSongs = songs.filter(song => song.style === songStyle)
     console.log(filterSongs);
 
     return (
