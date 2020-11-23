@@ -162,5 +162,8 @@ label {
     margin: 0;
     padding: 1rem;
 }
+small {
+    padding-left: 60%;
+}
 
 /*# sourceMappingURL=/hit-parade-react.9ad09f98.css.map */
