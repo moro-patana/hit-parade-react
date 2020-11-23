@@ -116,7 +116,7 @@ function ContextProvider(props) {
             deleteItem, 
             cartItem, 
             emptyCart,
-            handleSubmit 
+            handleSubmit
             }}>
             {props.children}
         </Contexts.Provider>
