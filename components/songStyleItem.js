@@ -5,14 +5,14 @@ import { Contexts } from "../useContext"
 function SongStyleItem() {
     const {songs} = useContext(Contexts)
     console.log(songs);
-    const { cartStyle } = useParams()
+    const { songStyle } = useParams()
     const filterSongs = songs.filter(song => song.style === cartStyle)
     console.log(filterSongs);
 
     return (
       <div>
           <p className="song-style">
-              🎧{cartStyle}
+              🎧{songStyle}
           </p>
          {filterSongs.map(song => (
              <div key={song.id} className="filter-style" >

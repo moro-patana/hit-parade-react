@@ -25,7 +25,7 @@ function App() {
                 <Route exact path="/styles">
                     <Styles />
                 </Route>
-                <Route path="/styles/:cartStyle">
+                <Route path="/styles/:songStyle">
                     <SongStyleItem />
                 </Route>
                 <Route path="/addsong">

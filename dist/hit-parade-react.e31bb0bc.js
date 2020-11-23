@@ -34445,7 +34445,7 @@ function SongStyleItem() {
   console.log(songs);
 
   var _useParams = (0, _reactRouterDom.useParams)(),
-      cartStyle = _useParams.cartStyle;
+      songStyle = _useParams.songStyle;
 
   var filterSongs = songs.filter(function (song) {
     return song.style === cartStyle;
@@ -34453,7 +34453,7 @@ function SongStyleItem() {
   console.log(filterSongs);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
     className: "song-style"
-  }, "\uD83C\uDFA7", cartStyle), filterSongs.map(function (song) {
+  }, "\uD83C\uDFA7", songStyle), filterSongs.map(function (song) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: song.id,
       className: "filter-style"
@@ -34562,7 +34562,7 @@ function App() {
     exact: true,
     path: "/styles"
   }, /*#__PURE__*/_react.default.createElement(_styles.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/styles/:cartStyle"
+    path: "/styles/:songStyle"
   }, /*#__PURE__*/_react.default.createElement(_songStyleItem.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/addsong"
   }, /*#__PURE__*/_react.default.createElement("h4", null, "\uD83D\uDE03Add a new song"), /*#__PURE__*/_react.default.createElement(_addSong.default, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
