@@ -12,7 +12,9 @@ function Lyrics() {
         <div className="lyrics-page">
             <div key={song?.id} >
                 <h3>🎶 Lyrics</h3>
-                <p className="lyrics-paragraph">{song?.lyrics}</p>
+                <div className="lyrics-paragraph" dangerouslySetInnerHTML={{
+                    __html: song?.lyrics
+                }}></div>
             </div>
         </div>
         </>

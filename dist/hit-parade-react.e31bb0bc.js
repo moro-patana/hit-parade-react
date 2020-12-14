@@ -29779,7 +29779,7 @@ module.exports = [{
   "artist": "Westlife",
   "price": 1000,
   "style": "Slow",
-  "lyrics": "Day after day\n        Time pass away\n        And I just can't get you off my mind\n        Nobody knows\n        I hide it inside\n        I keep on searching, but I can't find\n        The courage to show to letting you know\n        I've never felt so much love before\n        And once again I'm thinking about\n        Taking the easy way out\n        But if I let you go, I will never know\n        What my life would be holding you close to me\n        Will I ever see you smiling back at me?\n        (Oh yeah) how will I know if I let you go?\n        Night after night I hear my self say\n        Why can't this feeling just fade away?\n        There's no one like you, you speak to my heart\n        It's such a shame we're worlds apart\n        I'm too shy to ask, I'm to proud to lose\n        But sooner or later I've got to choose\n        And once again I'm thinking about\n        Taking the easy way out\n        But if I let you go I will never know\u2026",
+  "lyrics": "<div><p>Day after day</p>\n<p>Time pass away</p>\n<p> And I just can't get you off my mind</p>\n<p>Nobody knows</p>\n<p>I hide it inside</p>\n<p>I keep on searching, but I can't find</p>\n<p>The courage to show to letting you know</p>\n<p>I've never felt so much love before</p>\n<p>And once again I'm thinking about</p>\n<p>Taking the easy way out</p>\n<br></br><h3>Chorus:</h3><p>But if I let you go, I will never know</p>\n<p>What my life would be holding you close to me</p>\n<p>Will I ever see you smiling back at me?</p>\n<p>(Oh yeah) how will I know if I let you go?</p>\n<br></br><p>Night after night I hear my self say</p>\n<p>Why can't this feeling just fade away?</p>\n<p>There's no one like you, you speak to my heart</p>\n<p>It's such a shame we're worlds apart</p>\n<p>I'm too shy to ask, I'm to proud to lose</p>\n<p>But sooner or later I've got to choose</p>\n<p>And once again I'm thinking about</p>\n<p>Taking the easy way out</p>\n</div>",
   "isFavorite": false,
   "upvote": 10,
   "downvote": 1
@@ -29789,7 +29789,7 @@ module.exports = [{
   "artist": "Celine Dion",
   "price": 2000,
   "style": "Slow",
-  "lyrics": "The whispers in the morning\n        Of lovers sleeping tight\n        Are rolling by like thunder now\n        As I look in your eyes\n        I hold on to your body\n        And feel each move you make\n        Your voice is warm and tender\n        A love that I could not forsake\n        'Cause I'm your lady\n        And you are my man\n        Whenever you reach for me\n        I'll do all that I can\n        Lost is how I'm feeling lying in your arms\n        When the world outside's too much to take\n        That all ends when I'm with you\n        Even though there may be times\n        It seems I'm far away\n        Never wonder where I am\n        'Cause I am always by your side\n        'Cause I'm your lady\n        And you are my man\n        Whenever you reach for me\n        I'll do all that I can\n        We're heading for something\n        Somewhere I've never been\n        Sometimes I am frightened\n        But I'm ready to learn\n        Of the power of love\n        The sound of your heart\u2026",
+  "lyrics": "<div><div><p>The whispers in the morning</p>\n<p>Of lovers sleeping tight</p>\n<p>Are rolling by like thunder now</p>\n<p>As I look in your eyes</p>\n</div><div><p>I hold on to your body</p>\n<p>And feel each move you make</p>\n<p>Your voice is warm and tender</p>\n<p>A love that I could not forsake</p>\n</div><br></br><div><h3>Chorus:</h3><p>'Cause I'm your lady</p>\n<p>And you are my man</p>\n<p>Whenever you reach for me</p>\n<p>I'll do all that I can</p>\n<br></br><p>Lost is how I'm feeling lying in your arms</p>\n<p>When the world outside's too much to take</p>\n<p>That all ends when I'm with you</p>\n</div><br></br><div><p>Even though there may be times</p>\n<p>It seems I'm far away</p>\n<p>Never wonder where I am</p>\n<p>'Cause I am always by your side</p>\n</div><div><p>We're heading for something</p>\n<p>Somewhere I've never been</p>\n<p>Sometimes I am frightened</p>\n<p>But I'm ready to learn</p>\n<p>Of the power of love</p>\n</div><div>",
   "isFavorite": false,
   "upvote": 30,
   "downvote": 0
@@ -29799,7 +29799,7 @@ module.exports = [{
   "artist": "Alan Jackson",
   "price": 5000,
   "style": "Country",
-  "lyrics": "Here I am all alone again tonight\n        In this old empty house\n        It's hard to learn what you don't think you need\n        You can't live without\n        Never leave the sound of the telephone\n        But ever since you left\n        I've been gone\n        Gone crazy, goin' out of my mind\n        I've asked myself the reason,\n        At least a thousand times\n        Goin' up and down this hallway\n        Tryin' to leave the pain behind\n        Ever since you left,\n        I've been gone\n        I never saw your face this many times\n        When you were really here\n        The things you said I never understood\n        Are now crystal clear\n        I never spent this much time at home\n        But ever since you left,\n        I've been gone\n        Gone crazy, goin' out of my mind\n        I've asked myself the reason,\n        At least a thousand times\n        Goin' up and down this hallway\n        Tryin' to leave the pain\u2026",
+  "lyrics": "<div><div><p>Here I am all alone again tonight</p>\n<p>In this old empty house</p>\n<p>It's hard to learn what you don't think you need</p>\n<p>You can't live without</p>\n<p>Never leave the sound of the telephone</p>\n<p>But ever since you left</p>\n<p>I've been gone</p>\n</div><br></br><div><h3>Chorus:</h3><p>Gone crazy, goin' out of my mind</p>\n<p>I've asked myself the reason,</p>\n<p>At least a thousand times</p>\n<p>Goin' up and down this hallway</p>\n<p>Tryin' to leave the pain behind</p>\n<p>Ever since you left,</p>\n<p>I've been gone</p>\n</div><br></br><div><p>I never saw your face this many times</p>\n<p>When you were really here</p>\n<p>The things you said I never understood</p>\n<p>Are now crystal clear</p>\n<p>I never spent this much time at home</p>\n<p>But ever since you left,</p>\n<p>I've been gone</p>\n</div></div>",
   "isFavorite": false,
   "upvote": 90,
   "downvote": 20
@@ -29809,7 +29809,7 @@ module.exports = [{
   "artist": "Novah Dakoto",
   "price": 3000,
   "style": "Country",
-  "lyrics": "Efa ela loatra izay\n        No nandehananao nandao\n        ity toerana izay niarahana\n        Indrisy anefa tsy nisy azoko natao\n        fa dia ny mirary ny hiverenanao\n        \n        Izay rehetra mahita ahy\n        dia mandatsa avokoa\n        Tsy kivy anefa aho\n        fa manana anao\n        \n        Mba miverena aty Antsihanaka aty e\n        Raha henonao izao antsoko izao\n        Mba miverena aty Antsihanaka aty e\n        Havanao ity nilaozanao ity\n        \n        Na lavitra aza ianao\n        aza adino ny efa vita\n        aza adino hoy aho\n        na dia iray minitra\n        \n        Ny taratasy ihany anie\n        No ataovy sesilany\n        F\u2019izaho aty manina\n        ka mitomany\n        \n        Iny soratanako iny anie\n        ataovy ao am-tratranao\n        fa iny no solotenako\n        hamangy anao",
+  "lyrics": "<div><div><p>Efa ela loatra izay</p>No nandehananao nandao</p>\nity toerana izay niarahana</p>\nIndrisy anefa tsy nisy azoko natao</p>\nfa dia ny mirary ny hiverenanao</p>\n</div><br></br><div><p>Izay rehetra mahita ahy</p>\n<p>dia mandatsa avokoa</p>\n<p>Tsy kivy anefa aho</p>\n<p>fa manana anao</p>\n</div><br></br><div><p>Mba miverena aty Antsihanaka aty e</p>\n<p>Raha henonao izao antsoko izao</p>\n<p>Mba miverena aty Antsihanaka aty e</p>\n<p>Havanao ity nilaozanao ity</p>\n</div><br></br><div><p>Na lavitra aza ianao</p>\n<p>aza adino ny efa vita</p>\n<p>aza adino hoy aho</p>\n<p>na dia iray minitra</p>\n</div><br></br><div><p>Ny taratasy ihany anie</p>\n<p>No ataovy sesilany</p>\n<p>F’izaho aty manina</p>\n<p>ka mitomany</p>\n</div><br></br><div><p>Iny soratanako iny anie</p>\n<p>ataovy ao am-tratranao</p>\n<p>fa iny no solotenako</p>\n<p>hamangy anao</p>\n</div></div>",
   "isFavorite": false,
   "upvote": 100,
   "downvote": 15
@@ -34534,9 +34534,12 @@ function Lyrics() {
     className: "lyrics-page"
   }, /*#__PURE__*/_react.default.createElement("div", {
     key: song === null || song === void 0 ? void 0 : song.id
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83C\uDFB6 Lyrics"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "lyrics-paragraph"
-  }, song === null || song === void 0 ? void 0 : song.lyrics))));
+  }, /*#__PURE__*/_react.default.createElement("h3", null, "\uD83C\uDFB6 Lyrics"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "lyrics-paragraph",
+    dangerouslySetInnerHTML: {
+      __html: song === null || song === void 0 ? void 0 : song.lyrics
+    }
+  }))));
 }
 
 var _default = Lyrics;
@@ -34653,7 +34656,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52173" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50968" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
