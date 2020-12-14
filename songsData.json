@@ -5,29 +5,7 @@
         "artist": "Westlife",
         "price": 1000,
         "style": "Slow",
-        "lyrics": `Day after day
-        Time pass away
-        And I just can't get you off my mind
-        Nobody knows
-        I hide it inside
-        I keep on searching, but I can't find
-        The courage to show to letting you know
-        I've never felt so much love before
-        And once again I'm thinking about
-        Taking the easy way out
-        But if I let you go, I will never know
-        What my life would be holding you close to me
-        Will I ever see you smiling back at me?
-        (Oh yeah) how will I know if I let you go?
-        Night after night I hear my self say
-        Why can't this feeling just fade away?
-        There's no one like you, you speak to my heart
-        It's such a shame we're worlds apart
-        I'm too shy to ask, I'm to proud to lose
-        But sooner or later I've got to choose
-        And once again I'm thinking about
-        Taking the easy way out
-        But if I let you go I will never know…`,
+        "lyrics": "<div><p>Day after day</p>\n<p>Time pass away</p>\n<p> And I just can't get you off my mind</p>\n<p>Nobody knows</p>\n<p>I hide it inside</p>\n<p>I keep on searching, but I can't find</p>\n<p>The courage to show to letting you know</p>\n<p>I've never felt so much love before</p>\n<p>And once again I'm thinking about</p>\n<p>Taking the easy way out</p>\n<br></br><h3>Chorus:</h3><p>But if I let you go, I will never know</p>\n<p>What my life would be holding you close to me</p>\n<p>Will I ever see you smiling back at me?</p>\n<p>(Oh yeah) how will I know if I let you go?</p>\n<br></br><p>Night after night I hear my self say</p>\n<p>Why can't this feeling just fade away?</p>\n<p>There's no one like you, you speak to my heart</p>\n<p>It's such a shame we're worlds apart</p>\n<p>I'm too shy to ask, I'm to proud to lose</p>\n<p>But sooner or later I've got to choose</p>\n<p>And once again I'm thinking about</p>\n<p>Taking the easy way out</p>\n</div>",
         "isFavorite": false,
         "upvote": 10,
         "downvote": 1
@@ -38,35 +16,7 @@
         "artist": "Celine Dion",
         "price": 2000,
         "style": "Slow",
-        "lyrics": `The whispers in the morning
-        Of lovers sleeping tight
-        Are rolling by like thunder now
-        As I look in your eyes
-        I hold on to your body
-        And feel each move you make
-        Your voice is warm and tender
-        A love that I could not forsake
-        'Cause I'm your lady
-        And you are my man
-        Whenever you reach for me
-        I'll do all that I can
-        Lost is how I'm feeling lying in your arms
-        When the world outside's too much to take
-        That all ends when I'm with you
-        Even though there may be times
-        It seems I'm far away
-        Never wonder where I am
-        'Cause I am always by your side
-        'Cause I'm your lady
-        And you are my man
-        Whenever you reach for me
-        I'll do all that I can
-        We're heading for something
-        Somewhere I've never been
-        Sometimes I am frightened
-        But I'm ready to learn
-        Of the power of love
-        The sound of your heart…`,
+        "lyrics": "<div><div><p>The whispers in the morning</p>\n<p>Of lovers sleeping tight</p>\n<p>Are rolling by like thunder now</p>\n<p>As I look in your eyes</p>\n</div><div><p>I hold on to your body</p>\n<p>And feel each move you make</p>\n<p>Your voice is warm and tender</p>\n<p>A love that I could not forsake</p>\n</div><div><h3>Chorus:</h3><p>'Cause I'm your lady</p>\n<p>And you are my man</p>\n<p>Whenever you reach for me</p>\n<p>I'll do all that I can</p>\n<br></br><p>Lost is how I'm feeling lying in your arms</p>\n<p>When the world outside's too much to take</p>\n<p>That all ends when I'm with you</p>\n</div><div><p>Even though there may be times</p>\n<p>It seems I'm far away</p>\n<p>Never wonder where I am</p>\n<p>'Cause I am always by your side</p>\n</div><div><p>We're heading for something</p>\n<p>Somewhere I've never been</p>\n<p>Sometimes I am frightened</p>\n<p>But I'm ready to learn</p>\n<p>Of the power of love</p>\n</div><div>",
         "isFavorite": false,
         "upvote": 30,
         "downvote": 0
@@ -77,32 +27,7 @@
         "artist": "Alan Jackson",
         "price": 5000,
         "style": "Country",
-        "lyrics": `Here I am all alone again tonight
-        In this old empty house
-        It's hard to learn what you don't think you need
-        You can't live without
-        Never leave the sound of the telephone
-        But ever since you left
-        I've been gone
-        Gone crazy, goin' out of my mind
-        I've asked myself the reason,
-        At least a thousand times
-        Goin' up and down this hallway
-        Tryin' to leave the pain behind
-        Ever since you left,
-        I've been gone
-        I never saw your face this many times
-        When you were really here
-        The things you said I never understood
-        Are now crystal clear
-        I never spent this much time at home
-        But ever since you left,
-        I've been gone
-        Gone crazy, goin' out of my mind
-        I've asked myself the reason,
-        At least a thousand times
-        Goin' up and down this hallway
-        Tryin' to leave the pain…`,
+        "lyrics": "<div><div><p>Here I am all alone again tonight</p>\n<p>In this old empty house</p>\n<p>It's hard to learn what you don't think you need</p>\n<p>You can't live without</p>\n<p>Never leave the sound of the telephone</p>\n<p>But ever since you left</p>\n<p>I've been gone</p>\n</div><br></br><div><h3>Chorus:</h3><p>Gone crazy, goin' out of my mind</p>\n<p>I've asked myself the reason,</p>\n<p>At least a thousand times</p>\n<p>Goin' up and down this hallway</p>\n<p>Tryin' to leave the pain behind</p>\n<p>Ever since you left,</p>\n<p>I've been gone</p>\n</div><br></br><div><p>I never saw your face this many times</p>\n<p>When you were really here</p>\n<p>The things you said I never understood</p>\n<p>Are now crystal clear</p>\n<p>I never spent this much time at home</p>\n<p>But ever since you left,</p>\n<p>I've been gone</p>\n</div></div>",
         "isFavorite": false,
         "upvote": 90,
         "downvote": 20
@@ -113,36 +38,7 @@
         "artist": "Novah Dakoto",
         "price": 3000,
         "style": "Country",
-        "lyrics": `Efa ela loatra izay
-        No nandehananao nandao
-        ity toerana izay niarahana
-        Indrisy anefa tsy nisy azoko natao
-        fa dia ny mirary ny hiverenanao
-        
-        Izay rehetra mahita ahy
-        dia mandatsa avokoa
-        Tsy kivy anefa aho
-        fa manana anao
-        
-        Mba miverena aty Antsihanaka aty e
-        Raha henonao izao antsoko izao
-        Mba miverena aty Antsihanaka aty e
-        Havanao ity nilaozanao ity
-        
-        Na lavitra aza ianao
-        aza adino ny efa vita
-        aza adino hoy aho
-        na dia iray minitra
-        
-        Ny taratasy ihany anie
-        No ataovy sesilany
-        F’izaho aty manina
-        ka mitomany
-        
-        Iny soratanako iny anie
-        ataovy ao am-tratranao
-        fa iny no solotenako
-        hamangy anao`,
+        "lyrics": "<div><div><p>Efa ela loatra izay</p>No nandehananao nandao</p>\nity toerana izay niarahana</p>\nIndrisy anefa tsy nisy azoko natao</p>\nfa dia ny mirary ny hiverenanao</p>\n</div><div><p>Izay rehetra mahita ahy</p>\n<p>dia mandatsa avokoa</p>\n<p>Tsy kivy anefa aho</p>\n<p>fa manana anao</p>\n</div><div><p>Mba miverena aty Antsihanaka aty e</p>\n<p>Raha henonao izao antsoko izao</p>\n<p>Mba miverena aty Antsihanaka aty e</p>\n<p>Havanao ity nilaozanao ity</p>\n</div><div><p>Na lavitra aza ianao</p>\n<p>aza adino ny efa vita</p>\n<p>aza adino hoy aho</p>\n<p>na dia iray minitra</p>\n</div><div><p>Ny taratasy ihany anie</p>\n<p>No ataovy sesilany</p>\n<p>F’izaho aty manina</p>\n<p>ka mitomany</p>\n</div><div><p>Iny soratanako iny anie</p>\n<p>ataovy ao am-tratranao</p>\n<p>fa iny no solotenako</p>\n<p>hamangy anao</p>\n</div></div>",
         "isFavorite": false,
         "upvote": 100,
         "downvote": 15
