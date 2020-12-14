@@ -1,4 +1,17 @@
 # Hit Parade in React
+## Overview
+ - Songs list
+
+![screenshot](https://iili.io/KTYq57.png)
+- Songs styles
+
+![screenshot](https://iili.io/KTYu0Q.png)
+
+- Add a new song to the list 
+![screenshot](https://iili.io/KTY75P.png)
+
+- Add songs to the cart and buy them
+![screenshot](https://iili.io/KTYamF.png)
 ## Steps
  ### Tools
   1. These are the following steps to follow:
@@ -26,6 +39,8 @@
 9. In the form input, change the value of the price name into a number
 (i.e: price: (Number(e.target.price.value))) so that you will not get a string.
 
+## Contact
+- Github: https://github.com/moro-patana/hit-parade-react
 **NB**:
 It was very nice project and it was a summary of what we have done during a week. It is helpful to have small project like that after theories.
 
