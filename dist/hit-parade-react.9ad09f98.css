@@ -169,6 +169,7 @@ label {
     font-size: 18px;
     margin: 0;
     padding: 1rem;
+    white-space: pre-line;
 }
 small {
     padding-left: 50%;
